@@ -1,0 +1,64 @@
+{
+    "mobiles": {
+        "Vivo": {
+            "Mobile1": {
+                "name": "Mobile1",
+                "mrp": "10000",
+                "price": "9500",
+                "description": {
+                    "Screen Size": "5.5 inch",
+                    "RAM": "4GB",
+                    "Memory": "128GB",
+                    "Front Camera": "jhbsdhejfbr nsihbd",
+                    "Rear Camera": "njhfeg fheius",
+                    "url": "https://amazon.in"
+                },
+                "cashback": "250"
+            },
+            "Mobile2": {
+                "name": "Mobile2",
+                "mrp": "12000",
+                "price": "10000",
+                "description": {
+                    "Screen Size": "6 inch",
+                    "RAM": "8GB",
+                    "Memory": "128GB",
+                    "Front Camera": "jhbsdhejfbr nsihbd",
+                    "Rear Camera": "njhfeg fheius",
+                    "url": "https://google.com"
+                },
+                "cashback": "250"
+            }
+        },
+        "Samsung": {
+            "SamMobile1": {
+                "name": "SamMobile1",
+                "mrp": "10000",
+                "price": "9500",
+                "description": {
+                    "Screen Size": "5.5 inch",
+                    "RAM": "4GB",
+                    "Memory": "128GB",
+                    "Front Camera": "jhbsdhejfbr nsihbd",
+                    "Rear Camera": "njhfeg fheius",
+                    "url": "https://amazon.in"
+                },
+                "cashback": "250"
+            },
+            "SamMobile2": {
+                "name": "SamMobile2",
+                "mrp": "12000",
+                "price": "10000",
+                "description": {
+                    "Screen Size": "6 inch",
+                    "RAM": "8GB",
+                    "Memory": "128GB",
+                    "Front Camera": "jhbsdhejfbr nsihbd",
+                    "Rear Camera": "njhfeg fheius",
+                    "url": "https://google.com"
+                },
+                "cashback": "250"
+            }
+        }
+    }
+}
