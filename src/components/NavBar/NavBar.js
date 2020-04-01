@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Navbar, NavItem, Icon } from "react-materialize";
 import { connect } from "react-redux";
 import { BASE_URL } from "../../serverConfig";
-import classes from "./NavBar.module.scss";
+import styles from "./NavBar.module.scss";
 import { NavLink } from "react-router-dom";
 import data from "../../data.json";
 
@@ -20,7 +20,7 @@ class NavBar extends Component {
             Amar Electronics
           </NavLink>
         }
-        className={classes.navbar}
+        className={styles.navbar}
         id="mobile-nav"
         menuIcon={<Icon>menu</Icon>}
         options={{
@@ -39,7 +39,8 @@ class NavBar extends Component {
           return (
               <NavLink
                 to={`${BASE_URL}/mobiles/${company}`}
-                key={`${company}`}
+								key={`${company}`}
+								className={styles.navLink}
               >{`${company}`}</NavLink>
           );
         })}

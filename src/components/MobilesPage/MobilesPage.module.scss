@@ -22,4 +22,13 @@
         width: 100%;
         box-shadow: none;
     }
+
+    .noMobile {
+        display: flex;
+        flex: 1;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 40px 0;
+        justify-content: center;
+    }
 }

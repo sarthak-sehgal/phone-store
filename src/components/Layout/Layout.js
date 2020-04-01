@@ -1,9 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 
 import NavBar from "../NavBar/NavBar";
-import classes from "./Layout.module.scss";
+import FooterComponent from "../Footer/Footer";
+import styles from "./Layout.module.scss";
 
 class Layout extends React.Component {
   constructor(props) {
@@ -12,10 +13,11 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <Fragment>
+      <div className={styles.container}>
         <NavBar />
-        <main className={classes.content}>{this.props.children}</main>
-      </Fragment>
+        <main className={styles.content}>{this.props.children}</main>
+				<FooterComponent />
+      </div>
     );
   }
 }

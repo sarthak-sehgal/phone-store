@@ -3,10 +3,22 @@ import styles from "./ItemBox.module.scss";
 import {BASE_URL} from '../../serverConfig';
 
 class ItemBox extends Component {
+	constructor (props) {
+		super(props);
+	}
   render() {
+		if (!this.props.data || this.props.data == {})
+			return (
+				<Fragment>
+					<div className={styles.container}>
+						Some error occurred. Please refresh.
+					</div>
+				</Fragment>
+			)
+
     let cashback = null;
-    if (this.props.data.chashback)
-      cashback = <span className={styles.cashback}>{this.props.data.chashback}</span>;
+    if (this.props.data.cashback)
+      cashback = <span className={styles.cashback}>Cashback offer: {this.props.data.cashback}</span>;
 
     return (
       <Fragment>
