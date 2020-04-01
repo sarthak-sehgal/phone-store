@@ -54,7 +54,7 @@ class Home extends Component {
           </div>
           <div className={styles.callNow}>
             <Icon>call</Icon>
-            <span>Call now at 9818061375 for more details!</span>
+            <span>Call now at xxxx for more details!</span>
           </div>
         </div>
         <div className={styles.selectDiv}>

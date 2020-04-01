@@ -14,7 +14,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-				{/* <img className={styles.mobBanner} src={require("../../assets/mobile_banner.png")} alt="Call 9818061375 for enquiries" /> */}
+				{/* <img className={styles.mobBanner} src={require("../../assets/mobile_banner.png")} alt="Call xxxx for enquiries" /> */}
         <NavBar />
         <main className={styles.content}>{this.props.children}</main>
 				<FooterComponent />
