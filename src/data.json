@@ -1,67 +1,1422 @@
 {
-    "mobiles": {
-        "Vivo": {
-            "Mobile1": {
-                "name": "Mobile1",
-                "mrp": "10000",
-                "price": "9500",
-                "description": {
-                    "Screen Size": "5.5 inch",
-                    "RAM": "4GB",
-                    "Memory": "128GB",
-                    "Front Camera": "jhbsdhejfbr nsihbd",
-                    "Rear Camera": "njhfeg fheius",
-                    "url": "https://amazon.in"
-                },
-                "cashback": "250"
-            },
-            "Mobile2": {
-                "name": "Mobile2",
-                "mrp": "12000",
-                "price": "10000",
-                "description": {
-                    "Screen Size": "6 inch",
-                    "RAM": "8GB",
-                    "Memory": "128GB",
-                    "Front Camera": "jhbsdhejfbr nsihbd",
-                    "Rear Camera": "njhfeg fheius",
-                    "url": "https://google.com"
-                },
-                "cashback": "250"
-            }
-        },
-        "Samsung": {
-            "SamMobile1": {
-                "name": "SamMobile1",
-                "mrp": "10000",
-                "price": "9500",
-                "description": {
-                    "Screen Size": "5.5 inch",
-                    "RAM": "4GB",
-                    "Memory": "128GB",
-                    "Front Camera": "jhbsdhejfbr nsihbd",
-                    "Rear Camera": "njhfeg fheius",
-                    "url": "https://amazon.in"
-                },
-                "cashback": "250"
-            },
-            "SamMobile2": {
-                "name": "SamMobile2",
-                "mrp": "12000",
-                "price": "10000",
-                "description": {
-                    "Screen Size": "6 inch",
-                    "RAM": "8GB",
-                    "Memory": "128GB",
-                    "Front Camera": "jhbsdhejfbr nsihbd",
-                    "Rear Camera": "njhfeg fheius",
-                    "url": "https://google.com"
-                },
-                "cashback": "250"
-            }
-        },
-        "Oppo": {
-
+  "mobiles": {
+    "Samsung": {
+      "S20 Ultra": {
+        "name": "S20 Ultra",
+        "mrp": "92999",
+        "price": "92999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.9in",
+          "RAM": "12GB",
+          "Memory": "128GB",
+          "Front Camera": "40MP",
+          "Rear Camera": "Quad Camera 108MP+48MP+12MP+Depth",
+          "url": "",
+          "Misc": ""
         }
+      },
+      "S20+": {
+        "name": "S20+",
+        "mrp": "73999",
+        "price": "73999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "10MP",
+          "Rear Camera": "Quad Camera 64MP+12MP+12MP+Depth",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "S20": {
+        "name": "S20",
+        "mrp": "66999",
+        "price": "66999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.2in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "10MP",
+          "Rear Camera": "Triple Camera 64MP+12MP+12MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Note10+ 512GB": {
+        "name": "Note10+ 512GB",
+        "mrp": "89999",
+        "price": "89999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.8in",
+          "RAM": "12GB",
+          "Memory": "512GB",
+          "Front Camera": "10MP F2.2 Dual Pixel AF",
+          "Rear Camera": "Quad Camera 16MP Ultra Wide + 12MP Wide + 12MP Tele + Depth",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Note10+ 256GB": {
+        "name": "Note10+ 256GB",
+        "mrp": "79999",
+        "price": "79999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.8in",
+          "RAM": "12GB",
+          "Memory": "256GB",
+          "Front Camera": "10MP F2.2 Dual Pixel AF",
+          "Rear Camera": "Quad Camera 16MP Ultra Wide + 12MP Wide + 12MP Tele + Depth",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Note10 256GB": {
+        "name": "Note10 256GB",
+        "mrp": "69999",
+        "price": "69999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.3in",
+          "RAM": "8GB",
+          "Memory": "256GB",
+          "Front Camera": "10MP F2.2 Dual Pixel AF",
+          "Rear Camera": "Triple Camera 16MP Ultra Wide + 12MP Wise + 12MP Tele",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Note S10+ 1TB": {
+        "name": "Note S10+ 1TB",
+        "mrp": "93900",
+        "price": "93900",
+        "cashback": "Instant Rs.5000",
+        "description": {
+          "Screen": "6.4in",
+          "RAM": "12GB",
+          "Memory": "1TB",
+          "Front Camera": "10MP + 8MP",
+          "Rear Camera": "Triple Camera 16MP Ultra Wide + 12MP Wise + 12MP Tele",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Note S10+ 512GB": {
+        "name": "Note S10+ 512GB",
+        "mrp": "74900",
+        "price": "74900",
+        "cashback": "Instant Rs.5000",
+        "description": {
+          "Screen": "6.4in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "10MP + 8MP",
+          "Rear Camera": "Triple Camera 16MP Ultra Wide + 12MP Wise + 12MP Tele",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Note S10+ 128GB": {
+        "name": "Note S10+ 128GB",
+        "mrp": "63900",
+        "price": "63900",
+        "cashback": "Instant Rs.2000",
+        "description": {
+          "Screen": "6.4in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "10MP + 8MP",
+          "Rear Camera": "Triple Camera 16MP Ultra Wide + 12MP Wise + 12MP Tele",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "S10 512GB": {
+        "name": "S10 512GB",
+        "mrp": "67900",
+        "price": "67900",
+        "cashback": "Instant Rs.8000",
+        "description": {
+          "Screen": "6.1in",
+          "RAM": "8GB",
+          "Memory": "512GB",
+          "Front Camera": "10MP",
+          "Rear Camera": "Triple Camera 16MP Ultra Wide + 12MP Wise + 12MP Tele",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "S10 128GB": {
+        "name": "S10 128GB",
+        "mrp": "55900",
+        "price": "55900",
+        "cashback": "Instant Rs.1000",
+        "description": {
+          "Screen": "6.1in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "10MP",
+          "Rear Camera": "Triple Camera 16MP Ultra Wide + 12MP Wise + 12MP Tele",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "S10e": {
+        "name": "S10e",
+        "mrp": "44900",
+        "price": "44900",
+        "cashback": "",
+        "description": {
+          "Screen": "5.8in",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "10MP",
+          "Rear Camera": "Dual Camera 16MP Ultra Wide + 12MP Wide",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Galaxy S10 Lite 512GB": {
+        "name": "Galaxy S10 Lite 512GB",
+        "mrp": "44999",
+        "price": "44999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "8GB",
+          "Memory": "512GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "Triple Camera 48MP Super Steady + 12MP Ultra Wide + 5MP Macro",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Galaxy S10 Lite 128GB": {
+        "name": "Galaxy S10 Lite 128GB",
+        "mrp": "40999",
+        "price": "40999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "Triple Camera 12MP Ultra Wide + 12MP Wide + 12MP Tele",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Galaxy S10 Lite 128GB (2)": {
+        "name": "Galaxy S10 Lite 128GB (2)",
+        "mrp": "39999",
+        "price": "39999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "Triple Camera 48MP Super Steady + 12MP Ultra Wide + 5MP Macro",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A805F": {
+        "name": "A805F",
+        "mrp": "39990",
+        "price": "39990",
+        "cashback": "",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "Rotating Camera (48MP + 8MP + 5MP)",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Galaxy Note10 Lite 128GB": {
+        "name": "Galaxy Note10 Lite 128GB",
+        "mrp": "38999",
+        "price": "38999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "Triple Camera 12MP Ultra Wide + 12 MP Wide + 12MP Tele",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A71": {
+        "name": "A71",
+        "mrp": "29999",
+        "price": "29999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "Quad Camera 64MP+12MP+5MP+5MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A70s (1)": {
+        "name": "A70s (1)",
+        "mrp": "28999",
+        "price": "28999",
+        "cashback": "Instant Rs.2500",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "64MP+8MP+5MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A70s (2)": {
+        "name": "A70s (2)",
+        "mrp": "26999",
+        "price": "26999",
+        "cashback": "Instant Rs.2500",
+        "description": {
+          "Screen": "6.7in",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "64MP+8MP+5MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A51": {
+        "name": "A51",
+        "mrp": "23999",
+        "price": "23999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.5in",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "48MP+12MP+5MP+5MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A50s": {
+        "name": "A50s",
+        "mrp": "19999",
+        "price": "19999",
+        "cashback": "Instant Rs2500",
+        "description": {
+          "Screen": "6.4in",
+          "RAM": "4GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP",
+          "Rear Camera": "48MP+8MP+5MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A30s": {
+        "name": "A30s",
+        "mrp": "15999",
+        "price": "15999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.4in",
+          "RAM": "4GB",
+          "Memory": "128GB",
+          "Front Camera": "16MP",
+          "Rear Camera": "25MP+8MP+5MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A20s": {
+        "name": "A20s",
+        "mrp": "12999",
+        "price": "12999",
+        "cashback": "",
+        "description": {
+          "Screen": "6.4in",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "8MP",
+          "Rear Camera": "13MP+8MP+5MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A10s": {
+        "name": "A10s",
+        "mrp": "8999",
+        "price": "8999",
+        "cashback": "Instant Rs.500",
+        "description": {
+          "Screen": "6.2in",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "8MP",
+          "Rear Camera": "13MP+2MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "J2 Core": {
+        "name": "J2 Core",
+        "mrp": "5999",
+        "price": "5999",
+        "cashback": "",
+        "description": {
+          "Screen": "5in",
+          "RAM": "1GB",
+          "Memory": "16GB",
+          "Front Camera": "5MP",
+          "Rear Camera": "8MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Metro (1)": {
+        "name": "Metro (1)",
+        "mrp": "3225",
+        "price": "3225",
+        "cashback": "",
+        "description": {
+          "Screen": "2.8in",
+          "RAM": "",
+          "Memory": "",
+          "Front Camera": "2MP",
+          "Rear Camera": "3.1MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Metro (2)": {
+        "name": "Metro (2)",
+        "mrp": "2800",
+        "price": "2800",
+        "cashback": "",
+        "description": {
+          "Screen": "2.4in",
+          "RAM": "",
+          "Memory": "",
+          "Front Camera": "",
+          "Rear Camera": "2MP",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Metro (3)": {
+        "name": "Metro (3)",
+        "mrp": "2025",
+        "price": "2025",
+        "cashback": "",
+        "description": {
+          "Screen": "2in",
+          "RAM": "",
+          "Memory": "",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Guru Music 2": {
+        "name": "Guru Music 2",
+        "mrp": "1625",
+        "price": "1625",
+        "cashback": "",
+        "description": {
+          "Screen": "2in",
+          "RAM": "",
+          "Memory": "",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Guru Plus": {
+        "name": "Guru Plus",
+        "mrp": "1375",
+        "price": "1375",
+        "cashback": "",
+        "description": {
+          "Screen": "1.5in",
+          "RAM": "",
+          "Memory": "",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Eider": {
+        "name": "Eider",
+        "mrp": "1100",
+        "price": "1100",
+        "cashback": "",
+        "description": {
+          "Screen": "1.5in",
+          "RAM": "",
+          "Memory": "",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Tab S6": {
+        "name": "Tab S6",
+        "mrp": "59900",
+        "price": "59900",
+        "cashback": "",
+        "description": {
+          "Screen": "10.5in",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "8MP",
+          "Rear Camera": "13MP + 5MP",
+          "url": "",
+          "Misc": "WiFi + LTE"
+        }
+      },
+      "Tab S5e": {
+        "name": "Tab S5e",
+        "mrp": "39999",
+        "price": "39999",
+        "cashback": "",
+        "description": {
+          "Screen": "10.5in",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "8MP",
+          "Rear Camera": "13MP",
+          "url": "",
+          "Misc": "WiFi + LTE"
+        }
+      },
+      "Tab A 10.1in": {
+        "name": "Tab A 10.1in",
+        "mrp": "19999",
+        "price": "19999",
+        "cashback": "",
+        "description": {
+          "Screen": "10.1in",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "5MP",
+          "Rear Camera": "8MP",
+          "url": "",
+          "Misc": "WiFi + LTE"
+        }
+      },
+      "Tab A 8in": {
+        "name": "Tab A 8in",
+        "mrp": "11999",
+        "price": "11999",
+        "cashback": "",
+        "description": {
+          "Screen": "8in",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "2MP",
+          "Rear Camera": "8MP",
+          "url": "",
+          "Misc": "WiFi + LTE"
+        }
+      }
+    },
+    "Vivo": {
+      "Vivo V17": {
+        "name": "Vivo V17",
+        "mrp": "22990",
+        "price": "22990",
+        "cashback": "",
+        "description": {
+          "Screen": "6.44in, iView Display, Super AMOLED",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP Super Clear Selfie",
+          "Rear Camera": "48MP AI Quad Rear Camera",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Vivo S1 Pro": {
+        "name": "Vivo S1 Pro",
+        "mrp": "18990",
+        "price": "18990",
+        "cashback": "",
+        "description": {
+          "Screen": "6.38in, Flash In-Display Fingerprint",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "32MP AI Selfie Camera",
+          "Rear Camera": "48MP AI Quad Rear Camera",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Vivo Y19": {
+        "name": "Vivo Y19",
+        "mrp": "13990",
+        "price": "13990",
+        "cashback": "",
+        "description": {
+          "Screen": "6.53in, Halo FullView Display",
+          "RAM": "4GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "AI Triple Rear Camera",
+          "url": "",
+          "Misc": "5000mAh Battery, 18W Fast Charging"
+        }
+      },
+      "Vivo Y15": {
+        "name": "Vivo Y15",
+        "mrp": "11990",
+        "price": "11990",
+        "cashback": "",
+        "description": {
+          "Screen": "6.35in, Halo FullView Display",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "16MP Front Camera",
+          "Rear Camera": "AI Triple Rear Camera",
+          "url": "",
+          "Misc": "5000mAh Battery"
+        }
+      },
+      "Vivo Y12": {
+        "name": "Vivo Y12",
+        "mrp": "9990",
+        "price": "9990",
+        "cashback": "",
+        "description": {
+          "Screen": "6.35in, Halo FullView Display",
+          "RAM": "3GB",
+          "Memory": "64GB",
+          "Front Camera": "8MP Selfie Camera",
+          "Rear Camera": "Triple 13MP+8MP+2MP",
+          "url": "",
+          "Misc": "MediaTek Helio P22"
+        }
+      },
+      "Vivo Y91": {
+        "name": "Vivo Y91",
+        "mrp": "7990",
+        "price": "7990",
+        "cashback": "",
+        "description": {
+          "Screen": "6.22in, Halo FullView Display",
+          "RAM": "3GB",
+          "Memory": "32GB",
+          "Front Camera": "5MP Selfie Camera",
+          "Rear Camera": "13MP Rear Camera",
+          "url": "",
+          "Misc": ""
+        }
+      }
+    },
+    "Xiaomi": {
+      "Mi A3": {
+        "name": "Mi A3",
+        "mrp": "12499",
+        "price": "11999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Mi A3 (2)": {
+        "name": "Mi A3 (2)",
+        "mrp": "15499",
+        "price": "14999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Poco F1 (1)": {
+        "name": "Poco F1 (1)",
+        "mrp": "19499",
+        "price": "18999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Poco F1 (2)": {
+        "name": "Poco F1 (2)",
+        "mrp": "18499",
+        "price": "17999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Poco F1 (3)": {
+        "name": "Poco F1 (3)",
+        "mrp": "23499",
+        "price": "22999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "256GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 7 (1)": {
+        "name": "Redmi 7 (1)",
+        "mrp": "7799",
+        "price": "7499",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 7 (2)": {
+        "name": "Redmi 7 (2)",
+        "mrp": "8799",
+        "price": "8499",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "3GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 7A (1)": {
+        "name": "Redmi 7A (1)",
+        "mrp": "6299",
+        "price": "5999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "2GB",
+          "Memory": "16GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 7A (2)": {
+        "name": "Redmi 7A (2)",
+        "mrp": "6499",
+        "price": "6199",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 8": {
+        "name": "Redmi 8",
+        "mrp": "8299",
+        "price": "7999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4gB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 8A (1)": {
+        "name": "Redmi 8A (1)",
+        "mrp": "6799",
+        "price": "6499",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 8A (2)": {
+        "name": "Redmi 8A (2)",
+        "mrp": "7299",
+        "price": "6999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "3GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 8A Dual (1)": {
+        "name": "Redmi 8A Dual (1)",
+        "mrp": "6799",
+        "price": "6499",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi 8A Dual (2)": {
+        "name": "Redmi 8A Dual (2)",
+        "mrp": "7299",
+        "price": "6999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "3GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Go": {
+        "name": "Redmi Go",
+        "mrp": "4699",
+        "price": "4499",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "1GB",
+          "Memory": "16GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi K20 (1)": {
+        "name": "Redmi K20 (1)",
+        "mrp": "234999",
+        "price": "22999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi K20 (2)": {
+        "name": "Redmi K20 (2)",
+        "mrp": "204999",
+        "price": "19999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi K20 Pro (1)": {
+        "name": "Redmi K20 Pro (1)",
+        "mrp": "254999",
+        "price": "24999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi K20 Pro (2)": {
+        "name": "Redmi K20 Pro (2)",
+        "mrp": "284999",
+        "price": "27999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "256GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 7 Pro (1)": {
+        "name": "Redmi Note 7 Pro (1)",
+        "mrp": "114999",
+        "price": "10999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 7 Pro (2)": {
+        "name": "Redmi Note 7 Pro (2)",
+        "mrp": "14499",
+        "price": "13999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 7 Pro (3)": {
+        "name": "Redmi Note 7 Pro (3)",
+        "mrp": "13499",
+        "price": "12999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 7S (1)": {
+        "name": "Redmi Note 7S (1)",
+        "mrp": "10299",
+        "price": "9999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "3GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 7S (2)": {
+        "name": "Redmi Note 7S (2)",
+        "mrp": "12499",
+        "price": "11999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 8 (1)": {
+        "name": "Redmi Note 8 (1)",
+        "mrp": "9799",
+        "price": "9499",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "3GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 8 (2)": {
+        "name": "Redmi Note 8 (2)",
+        "mrp": "10999",
+        "price": "10499",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 8 (3)": {
+        "name": "Redmi Note 8 (3)",
+        "mrp": "13499",
+        "price": "12999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 8 Pro (1)": {
+        "name": "Redmi Note 8 Pro (1)",
+        "mrp": "16499",
+        "price": "15999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 8 Pro (2)": {
+        "name": "Redmi Note 8 Pro (2)",
+        "mrp": "15499",
+        "price": "14999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Note 8 Pro (3)": {
+        "name": "Redmi Note 8 Pro (3)",
+        "mrp": "18499",
+        "price": "17999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Y3 (1)": {
+        "name": "Redmi Y3 (1)",
+        "mrp": "9299",
+        "price": "8999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "3GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "Redmi Y3 (2)": {
+        "name": "Redmi Y3 (2)",
+        "mrp": "12499",
+        "price": "11999",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      }
+    },
+    "Oppo": {
+      "A5S (1)": {
+        "name": "A5S (1)",
+        "mrp": "8490",
+        "price": "8406",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A5S (2)": {
+        "name": "A5S (2)",
+        "mrp": "8990",
+        "price": "8901",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "3GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A5S (3)": {
+        "name": "A5S (3)",
+        "mrp": "10990",
+        "price": "10881",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A31": {
+        "name": "A31",
+        "mrp": "11490",
+        "price": "11376",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A5 2020 (1)": {
+        "name": "A5 2020 (1)",
+        "mrp": "11490",
+        "price": "11376",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "3GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A5 2020 (2)": {
+        "name": "A5 2020 (2)",
+        "mrp": "12990",
+        "price": "12861",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A5 2020 (3)": {
+        "name": "A5 2020 (3)",
+        "mrp": "14990",
+        "price": "14842",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A1K": {
+        "name": "A1K",
+        "mrp": "7490",
+        "price": "7416",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "2GB",
+          "Memory": "32GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "K1": {
+        "name": "K1",
+        "mrp": "13990",
+        "price": "13851",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "64GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A9 2020 (1)": {
+        "name": "A9 2020 (1)",
+        "mrp": "14990",
+        "price": "14842",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "4GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "A9 2020 (2)": {
+        "name": "A9 2020 (2)",
+        "mrp": "17490",
+        "price": "17317",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "F15": {
+        "name": "F15",
+        "mrp": "19990",
+        "price": "19792",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "F11": {
+        "name": "F11",
+        "mrp": "16990",
+        "price": "16822",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "F11 PRO": {
+        "name": "F11 PRO",
+        "mrp": "19990",
+        "price": "19792",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "6GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "RENO 2F": {
+        "name": "RENO 2F",
+        "mrp": "21990",
+        "price": "21772",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "RENO 2Z": {
+        "name": "RENO 2Z",
+        "mrp": "25990",
+        "price": "25733",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "RENO 2": {
+        "name": "RENO 2",
+        "mrp": "36990",
+        "price": "36624",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "256GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "RENO": {
+        "name": "RENO",
+        "mrp": "32990",
+        "price": "32663",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "RENO PRO": {
+        "name": "RENO PRO",
+        "mrp": "49990",
+        "price": "49495",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "256GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      },
+      "RENO 3 PRO": {
+        "name": "RENO 3 PRO",
+        "mrp": "29990",
+        "price": "29693",
+        "cashback": "",
+        "description": {
+          "Screen": "",
+          "RAM": "8GB",
+          "Memory": "128GB",
+          "Front Camera": "",
+          "Rear Camera": "",
+          "url": "",
+          "Misc": ""
+        }
+      }
     }
+  }
 }
