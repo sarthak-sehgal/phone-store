@@ -10,7 +10,7 @@ import MobilesPage from "../MobilesPage/MobilesPage";
 class Home extends Component {
   state = {
     companies: Object.keys(data.mobiles),
-    selectedCompany: "Samsung"
+    selectedCompany: "Xiaomi"
 	};
 
 	selectCompanyHandler = (e) => {

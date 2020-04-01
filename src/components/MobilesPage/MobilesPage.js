@@ -70,8 +70,8 @@ class MobilesPage extends Component {
   sortingComparator = (a, b, companyData) => {
     if (!companyData) companyData = this.state.mobilesObj;
     if (!companyData[a] || !companyData[b]) return 1;
-    if (companyData[a].price > companyData[b].price) return -1;
-    return 1;
+    if (companyData[a].price > companyData[b].price) return 1;
+    return -1;
   };
 
   initSearch = query => {
@@ -84,7 +84,7 @@ class MobilesPage extends Component {
     jsSearch.addIndex(["description", "Rear Camera"]);
     jsSearch.addIndex(["description", "Memory"]);
     jsSearch.addIndex(["description", "RAM"]);
-    jsSearch.addIndex(["description", "Screen Size"]);
+    jsSearch.addIndex(["description", "Screen"]);
     let docs = [];
     this.state.mobileNames.map(mobile => {
       docs.push({

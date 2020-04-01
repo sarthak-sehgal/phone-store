@@ -34,6 +34,14 @@ class Filter extends Component {
 		this.props.searchFunc(e.target.value);
 	}
 
+	hrefHandler = (e) => {
+		e.preventDefault();
+		if (e.target.id == "ltoh")
+			this.props.sortFunc(true);
+		if (e.target.id == "htol")
+			this.props.sortFunc(false);
+	}
+
   render() {
     // let switchComponent = (
     //   <Switch
@@ -93,8 +101,8 @@ class Filter extends Component {
           }}
           trigger={<div className={styles.filtersIconDiv}>Filters<Icon>more_vert</Icon></div>}
         >
-          <a href="#" onClick={() => this.props.sortFunc(true)}>Price: Low to High</a>
-					<a href="#" onClick={() => this.props.sortFunc(false)}>Price: High to Low</a>
+          <a href="" onClick={this.hrefHandler} id="ltoh">Price: Low to High</a>
+					<a href="" onClick={this.hrefHandler} id="htol">Price: High to Low</a>
         </Dropdown>
       </div>
     );
