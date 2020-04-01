@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Carousel } from "react-materialize";
-import classes from "./Home.module.css";
+import styles from "./Home.module.scss";
 
 class Home extends Component {
   render() {
@@ -9,18 +9,16 @@ class Home extends Component {
       <Fragment>
         <Carousel
           images={[
-            "https://picsum.photos/250/250?image=0",
-            "https://picsum.photos/250/250?image=1",
-            "https://picsum.photos/250/250?image=2",
-            "https://picsum.photos/250/250?image=3",
-            "https://picsum.photos/250/250?image=4"
+            require("../../assets/desktop_banner1.jpg"),
+            require("../../assets/desktop_banner2.jpg"),
+            require("../../assets/desktop_banner3.jpg")
           ]}
           options={{
             fullWidth: true,
 						indicators: true,
 						duration: 200
 					}}
-					className = {classes.carousel}
+					className = {styles.carousel}
 					carouselId = "home-carousel"
         />
       </Fragment>
