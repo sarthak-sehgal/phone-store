@@ -22,9 +22,11 @@ class Home extends Component {
       <Fragment>
         <Carousel
           images={[
-            require("../../assets/desktop_banner1.jpg"),
-            require("../../assets/desktop_banner2.jpg"),
-            require("../../assets/desktop_banner3.jpg")
+						"https://picsum.photos/250/250?image=0",
+						"https://picsum.photos/250/250?image=1",
+						"https://picsum.photos/250/250?image=2",
+						"https://picsum.photos/250/250?image=4",
+						"https://picsum.photos/250/250?image=5"
           ]}
           options={{
             fullWidth: true,

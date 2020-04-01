@@ -17,7 +17,7 @@ class NavBar extends Component {
         alignLinks="right"
         brand={
           <NavLink key="home" className="brand-logo" to={`${BASE_URL}/`}>
-            Amar Electronics
+            [[Company Name]]
           </NavLink>
         }
         className={styles.navbar}
