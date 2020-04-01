@@ -1,6 +1,8 @@
 # Phone Store
 A responsive React web app hosting content for a phone shop statically to help out shop owners in these times of social distancing.
 
+# Demo
+[View Demo Online](http://amarelectronics.netlify.app/)
 
 # Run locally
 - Develop
