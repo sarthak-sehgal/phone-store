@@ -26,9 +26,7 @@ class MobilesPage extends Component {
         mobileNames: Object.keys(companyData),
         mobilesObj: companyData,
         companyName,
-        filtered: Object.keys(companyData).sort((a, b) =>
-          this.sortingComparator(a, b, companyData)
-        )
+        filtered: Object.keys(companyData)
       });
     } else {
       this.setState({ error: true });
@@ -44,9 +42,7 @@ class MobilesPage extends Component {
         return {
           mobileNames: Object.keys(companyData),
           mobilesObj: companyData,
-          filtered: Object.keys(companyData).sort((a, b) =>
-            companyData[a].price > companyData[b].price ? -1 : 1
-          ),
+          filtered: Object.keys(companyData),
           companyName,
           jsSearch: null
         };
@@ -69,8 +65,10 @@ class MobilesPage extends Component {
 
   sortingComparator = (a, b, companyData) => {
     if (!companyData) companyData = this.state.mobilesObj;
-    if (!companyData[a] || !companyData[b]) return 1;
-    if (companyData[a].price > companyData[b].price) return 1;
+    if (!companyData[a] || !companyData[b]) {
+			return 1;
+		}
+    if (parseInt(companyData[a].price) > parseInt(companyData[b].price)) return 1;
     return -1;
   };
 

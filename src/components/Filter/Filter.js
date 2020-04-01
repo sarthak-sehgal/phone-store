@@ -36,9 +36,9 @@ class Filter extends Component {
 
 	hrefHandler = (e) => {
 		e.preventDefault();
-		if (e.target.id == "ltoh")
+		if (e.target.id === "ltoh")
 			this.props.sortFunc(true);
-		if (e.target.id == "htol")
+		if (e.target.id === "htol")
 			this.props.sortFunc(false);
 	}
 
