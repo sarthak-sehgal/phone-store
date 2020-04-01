@@ -4,7 +4,7 @@ import styles from "./MobilesPage.module.scss";
 import data from "../../data.json";
 import ItemBox from "../ItemBox/ItemBox";
 import Filter from "../Filter/Filter";
-import * as JsSearch from 'js-search';
+import * as JsSearch from "js-search";
 
 class MobilesPage extends Component {
   state = {
@@ -12,13 +12,14 @@ class MobilesPage extends Component {
     mobilesObj: {},
     filtered: [],
     error: false,
-		companyName: "",
-		jsSearch: null,
-		isPriceAsceding: true
+    companyName: "",
+    jsSearch: null,
+		isPriceAsceding: true,
+		isHome: false
   };
 
   componentDidMount() {
-    let companyName = this.props.match.params.id;
+		let companyName = this.props.match?.params?.id || this.props.id;
     if (companyName && data.mobiles[companyName]) {
       let companyData = data.mobiles[companyName];
       this.setState({
@@ -35,23 +36,26 @@ class MobilesPage extends Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    if (nextProps.match.params.id !== prevState.companyName) {
-      let companyName = nextProps.match.params.id;
+		if ((nextProps.id && nextProps.id !== prevState.companyName) || (nextProps.match?.params?.id !== undefined && nextProps.match.params.id !== prevState.companyName)) {
+      let companyName = nextProps.id || nextProps.match?.params?.id;
       if (companyName && data.mobiles[companyName]) {
+				console.log("Inside getDerivedStateFromProps: props changed!");
         let companyData = data.mobiles[companyName];
         return {
           mobileNames: Object.keys(companyData),
           mobilesObj: companyData,
-          filtered: Object.keys(companyData).sort((a, b) => companyData[a].price > companyData[b].price ? -1 : 1),
-					companyName,
-					jsSearch: null
+          filtered: Object.keys(companyData).sort((a, b) =>
+            companyData[a].price > companyData[b].price ? -1 : 1
+          ),
+          companyName,
+          jsSearch: null
         };
       }
-			return {
-				error: true
-			}
-		}
-		return prevState;
+      return {
+        error: true
+      };
+    }
+    return prevState;
   }
 
   sortByPrice = ascending => {
@@ -65,52 +69,58 @@ class MobilesPage extends Component {
 
   sortingComparator = (a, b, companyData) => {
     if (!companyData) companyData = this.state.mobilesObj;
-		if (!companyData[a] || !companyData[b])
-			return 1;
-		if (companyData[a].price > companyData[b].price) return -1;
+    if (!companyData[a] || !companyData[b]) return 1;
+    if (companyData[a].price > companyData[b].price) return -1;
     return 1;
-	};
+  };
 
-	initSearch = (query) => {
-		let jsSearch = new JsSearch.Search('name');
-		jsSearch.addIndex('name');
-		jsSearch.addIndex('company');
-		jsSearch.addIndex('price');
-		jsSearch.addIndex('keys');
-		jsSearch.addIndex(['description', 'Front Camera']);
-		jsSearch.addIndex(['description', 'Rear Camera']);
-		jsSearch.addIndex(['description', 'Memory']);
-		jsSearch.addIndex(['description', 'RAM']);
-		jsSearch.addIndex(['description', 'Screen Size']);
-		let docs = [];
-		this.state.mobileNames.map(mobile => {
-			docs.push({...this.state.mobilesObj[mobile], company: this.state.companyName, keys: JSON.stringify(Object.keys(this.state.mobilesObj[mobile].description))});
-		})
+  initSearch = query => {
+    let jsSearch = new JsSearch.Search("name");
+    jsSearch.addIndex("name");
+    jsSearch.addIndex("company");
+    jsSearch.addIndex("price");
+    jsSearch.addIndex("keys");
+    jsSearch.addIndex(["description", "Front Camera"]);
+    jsSearch.addIndex(["description", "Rear Camera"]);
+    jsSearch.addIndex(["description", "Memory"]);
+    jsSearch.addIndex(["description", "RAM"]);
+    jsSearch.addIndex(["description", "Screen Size"]);
+    let docs = [];
+    this.state.mobileNames.map(mobile => {
+      docs.push({
+        ...this.state.mobilesObj[mobile],
+        company: this.state.companyName,
+        keys: JSON.stringify(
+          Object.keys(this.state.mobilesObj[mobile].description)
+        )
+      });
+    });
 		jsSearch.addDocuments(docs);
-		this.setState({jsSearch: jsSearch}, () => {
-			this.search(query);
-		});
-	}
+		console.log("Inside initSearch: ", jsSearch);
+    this.setState({ jsSearch: jsSearch }, () => {
+			if(this.state.jsSearch)
+				this.search(query);
+    });
+  };
 
-	search = (query = "") => {
-		if (!this.state.jsSearch)
-			this.initSearch(query);
-		else {
-			let filteredNames = [];
-			if (query.trim() == "")
-				filteredNames = this.state.mobileNames;
-			else {
-				let filteredNamesArr = this.state.jsSearch.search(query);
-				filteredNamesArr.map(obj => {
-					filteredNames.push(obj.name);
-				})
-			}
-			if (!this.state.isPriceAsceding) filteredNames.sort((a, b) => this.sortingComparator(a, b)).reverse();
-			else filteredNames.sort((a, b) => this.sortingComparator(a, b));
-			this.setState({filtered: filteredNames});
-		}
-		// console.log(this.state.jsSearch.search(e.target.value));
-	}
+  search = (query = "") => {
+    if (!this.state.jsSearch) this.initSearch(query);
+    else {
+      let filteredNames = [];
+      if (query.trim() == "") filteredNames = this.state.mobileNames;
+      else {
+        let filteredNamesArr = this.state.jsSearch.search(query);
+        filteredNamesArr.map(obj => {
+          filteredNames.push(obj.name);
+        });
+      }
+      if (!this.state.isPriceAsceding)
+        filteredNames.sort((a, b) => this.sortingComparator(a, b)).reverse();
+      else filteredNames.sort((a, b) => this.sortingComparator(a, b));
+      this.setState({ filtered: filteredNames });
+    }
+    // console.log(this.state.jsSearch.search(e.target.value));
+  };
 
   render() {
     let mobileList = <span className={styles.noMobile}>No mobiles found!</span>;
@@ -130,8 +140,13 @@ class MobilesPage extends Component {
     return (
       <Fragment>
         <div className={styles.container}>
+          <span className={styles.heading}>{this.state.companyName}</span>
           <div className={styles.content}>
-            <Filter companyName={this.state.companyName} searchFunc={this.search} sortFunc={this.sortByPrice} />
+            <Filter
+              companyName={this.state.companyName}
+              searchFunc={this.search}
+              sortFunc={this.sortByPrice}
+            />
             {mobileList}
           </div>
         </div>

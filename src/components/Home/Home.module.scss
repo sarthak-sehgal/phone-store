@@ -5,3 +5,68 @@
 			max-height: 300px;
 		}
 }
+
+.allCompanies {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 200px;
+	background-color: #efefef;
+	flex-wrap: wrap;
+
+	@media (max-width: 600px) {
+		height: 150px;
+	}
+
+	.companiesHeading {
+		font-weight: bold;
+		font-size: 1.4rem;
+		margin-bottom: 10px;
+	}
+
+	.companies {
+		.navLink {
+			font-weight: 500;
+			font-size: 1.2rem;
+			color: #303030;
+			border-bottom: 1px dotted #464444;
+			margin: 0 20px;
+		}
+
+		.separator {
+			&::after {
+				content: '|';
+			}
+
+			&:last-child {
+				&::after {
+					content: '';
+				}
+			}
+		}
+	}
+
+	.callNow {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		font-size: 1rem;
+		font-weight: bold;
+		color: #535353;
+	}
+}
+
+.selectDiv {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+
+	.selectLabel {
+		font-weight: bold;
+	}
+}

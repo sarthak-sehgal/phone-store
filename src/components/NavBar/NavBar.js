@@ -35,13 +35,17 @@ class NavBar extends Component {
           preventScrolling: true
         }}
       >
-        {this.state.companies.map((company) => {
+        <NavLink
+          to={`${BASE_URL}/`}
+          className={styles.navLink}
+        >Home</NavLink>
+        {this.state.companies.map(company => {
           return (
-              <NavLink
-                to={`${BASE_URL}/mobiles/${company}`}
-								key={`${company}`}
-								className={styles.navLink}
-              >{`${company}`}</NavLink>
+            <NavLink
+              to={`${BASE_URL}/mobiles/${company}`}
+              key={`${company}`}
+              className={styles.navLink}
+            >{`${company}`}</NavLink>
           );
         })}
       </Navbar>

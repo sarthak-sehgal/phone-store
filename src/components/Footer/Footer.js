@@ -12,7 +12,7 @@ class FooterComponent extends Component {
         <p className="grey-text text-lighten-4">
 					Savitri Nagar, Block M,<br/>Malviya Nagar, New Delhi,<br/>Delhi 110017
         </p>
-				<p style={{display: 'flex', alignItems: 'center', fontWeight: 'bold'}}><Icon>call</Icon> 9818061375 for bookings</p>
+				<p style={{display: 'flex', alignItems: 'center', fontWeight: 'bold'}}><Icon>call</Icon> 9818061375 to purchase!</p>
       </Footer>
     );
   }
