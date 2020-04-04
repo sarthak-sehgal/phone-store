@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, NavItem, Icon } from "react-materialize";
+import { Navbar, Nav } from "react-bootstrap";
 import { connect } from "react-redux";
 import { BASE_URL } from "../../serverConfig";
 import styles from "./NavBar.module.scss";
@@ -8,54 +8,44 @@ import data from "../../data.json";
 
 class NavBar extends Component {
   state = {
-    companies: Object.keys(data.mobiles)
+    companies: Object.keys(data.mobiles),
   };
 
   render() {
     return (
       <Navbar
-        alignLinks="right"
-        brand={
-          <NavLink key="home" className="brand-logo" to={`${BASE_URL}/`}>
-            [[Company Name]]
-          </NavLink>
-        }
+        bg="primary"
+        variant="dark"
+        fixed="top"
         className={styles.navbar}
         id="mobile-nav"
-        menuIcon={<Icon>menu</Icon>}
-        options={{
-          draggable: true,
-          edge: "left",
-          inDuration: 250,
-          onCloseEnd: null,
-          onCloseStart: null,
-          onOpenEnd: null,
-          onOpenStart: null,
-          outDuration: 200,
-          preventScrolling: true
-        }}
       >
-        <NavLink
-          to={`${BASE_URL}/`}
-          className={styles.navLink}
-        >Home</NavLink>
-        {this.state.companies.map(company => {
-          return (
-            <NavLink
-              to={`${BASE_URL}/mobiles/${company}`}
-              key={`${company}`}
-              className={styles.navLink}
-            >{`${company}`}</NavLink>
-          );
-        })}
+        <Navbar.Brand href={BASE_URL}>[[ Company Name ]]</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className={styles.navLinks}>
+          <Nav className="mr-auto">
+            <NavLink to={`${BASE_URL}/`} className={styles.navLink}>
+              Home
+            </NavLink>
+            {this.state.companies.map((company) => {
+              return (
+                <NavLink
+                  to={`${BASE_URL}/mobiles/${company}`}
+                  key={`${company}`}
+                  className={styles.navLink}
+                >{`${company}`}</NavLink>
+              );
+            })}
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     );
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    data: state.data
+    data: state.data,
   };
 };
 
