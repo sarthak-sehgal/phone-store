@@ -18,12 +18,13 @@ class NavBar extends Component {
         variant="dark"
         fixed="top"
         className={styles.navbar}
-        id="mobile-nav"
+				id="mobile-nav"
+				expand="md"
       >
         <Navbar.Brand href={BASE_URL}>[[ Company Name ]]</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className={styles.navLinks}>
-          <Nav className="mr-auto">
+          <Nav className={`${styles.nav} mr-auto`}>
             <NavLink to={`${BASE_URL}/`} className={styles.navLink}>
               Home
             </NavLink>
