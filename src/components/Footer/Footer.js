@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Footer, Icon } from "react-materialize";
-import { Container, Row, Col, ListGroup } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.scss";
 import {BASE_URL} from "../../serverConfig";
