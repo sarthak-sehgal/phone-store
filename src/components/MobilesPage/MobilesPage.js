@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Collection, CollectionItem, Row, Col } from "react-materialize";
+import {ListGroup} from "react-bootstrap";
 import styles from "./MobilesPage.module.scss";
 import data from "../../data.json";
 import ItemBox from "../ItemBox/ItemBox";
@@ -124,15 +124,15 @@ class MobilesPage extends Component {
     let mobileList = <span className={styles.noMobile}>No mobiles found!</span>;
     if (!this.state.error && this.state.filtered.length > 0) {
       mobileList = (
-        <Collection>
+        <ListGroup>
           {this.state.filtered.map((name, index) => {
             return (
-              <CollectionItem key={`${name}-${index}`}>
+              <ListGroup.Item key={`${name}-${index}`}>
                 <ItemBox data={this.state.mobilesObj[name]}></ItemBox>
-              </CollectionItem>
+              </ListGroup.Item>
             );
           })}
-        </Collection>
+        </ListGroup>
       );
     }
     return (
@@ -140,11 +140,11 @@ class MobilesPage extends Component {
         <div className={styles.container}>
           <span className={styles.heading}>{this.state.companyName}</span>
           <div className={styles.content}>
-            <Filter
+            {/* <Filter
               companyName={this.state.companyName}
               searchFunc={this.search}
               sortFunc={this.sortByPrice}
-            />
+            /> */}
             {mobileList}
           </div>
         </div>
