@@ -3,7 +3,7 @@ import {ListGroup} from "react-bootstrap";
 import styles from "./MobilesPage.module.scss";
 import data from "../../data.json";
 import ItemBox from "../ItemBox/ItemBox";
-import Filter from "../Filter/Filter";
+// import Filter from "../Filter/Filter";
 import * as JsSearch from "js-search";
 
 class MobilesPage extends Component {
