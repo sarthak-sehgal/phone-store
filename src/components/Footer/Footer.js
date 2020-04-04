@@ -1,19 +1,37 @@
 import React, { Component } from "react";
 import { Footer, Icon } from "react-materialize";
+import { Container, Row, Col, ListGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import styles from "./Footer.module.scss";
+import {BASE_URL} from "../../serverConfig";
 
 class FooterComponent extends Component {
   render() {
     return (
-      <Footer
-        style={{backgroundColor: "#007bff"}}
-        copyrights="&copy; 2020 [[Company Name]]"
-      >
-        <h5 className="white-text">[[Company Name]]</h5>
-        <p className="grey-text text-lighten-4">
-				[[Company Address]]
-        </p>
-				<p style={{display: 'flex', alignItems: 'center', fontWeight: 'bold'}}><Icon>call</Icon> xxxx to purchase!</p>
-      </Footer>
+      <Container fluid className={styles.container}>
+        <Row className={styles.content}>
+          <Col>
+						<h3>[[ Company Name ]]</h3>
+						<p>
+							Building Number<br/>
+							Street Name<br/>
+							Pin Code
+						</p>
+					</Col>
+          <Col>
+            <h3>Links</h3>
+            <div className={styles.list}>
+								<Link to={`${BASE_URL}/locate`} className={styles.listItem}>Locate</Link>
+								<Link to={`${BASE_URL}/about`} className={styles.listItem}>About</Link>
+								<Link to={`${BASE_URL}/privacy`} className={styles.listItem}>Privacy Policy</Link>
+								<Link to={`${BASE_URL}/return`} className={styles.listItem}>Return Policy</Link>
+            </div>
+          </Col>
+        </Row>
+        <Row className={styles.copyright}>
+        	&copy;2020 Copyright: <span>[[ Company Name ]]</span>
+        </Row>
+      </Container>
     );
   }
 }

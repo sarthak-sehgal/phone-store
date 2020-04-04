@@ -1,0 +1,42 @@
+.container {
+	background-color: #2196f3;
+	color: #fff;
+	padding: 20px;
+	padding-bottom: 0;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.listItem {
+	display: block;
+	color: #fff;
+
+	&:hover, &.active, &:active, &.visited, &:visited {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.copyright {
+	color: rgba(255,255,255,0.6);
+	background-color: rgba(0,0,0,0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 0;
+
+	span {
+		color: #fff;
+	}
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 40px;
+}

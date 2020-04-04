@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/storeConfig";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import './main.scss';
 
 const app = (
   <Provider store={store}>
