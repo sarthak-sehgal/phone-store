@@ -75,6 +75,19 @@ export const loginUser = (values, user) => {
   };
 };
 
+export const logout = () => {
+	return dispatch => {
+		dispatch(authStartLoading());
+		auth.signOut()
+		.then(() => dispatch(storeUser(null)))
+		.catch((err) => {
+			console.log(err);
+			dispatch(authError(true, "Some error occurred. Please try again."));
+		}
+		)
+	}
+}
+
 export const storeUser = (user) => {
   return {
     type: STORE_USER,

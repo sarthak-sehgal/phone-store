@@ -8,5 +8,6 @@ export {
 export {
 	doesUserExists,
 	loginUser,
-	storeUser
+	storeUser,
+	logout
 } from "./auth"

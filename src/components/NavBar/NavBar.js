@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { connect } from "react-redux";
 import { BASE_URL } from "../../serverConfig";
 import styles from "./NavBar.module.scss";
 import { NavLink } from "react-router-dom";
 import data from "../../data.json";
+import { logout } from "../../store/actions";
 
 class NavBar extends Component {
   state = {
@@ -12,14 +13,28 @@ class NavBar extends Component {
   };
 
   render() {
+    let myAcc = (
+      <NavLink to={`${BASE_URL}/auth`} className={styles.navLink}>
+        Login
+      </NavLink>
+    );
+    if (this.props.user !== null) {
+      myAcc = (
+        <NavDropdown title="My Account" id="my-account">
+          <NavDropdown.Item onClick={() => this.props.logout()}>
+            Logout
+          </NavDropdown.Item>
+        </NavDropdown>
+      );
+    }
     return (
       <Navbar
         bg="primary"
         variant="dark"
         fixed="top"
         className={styles.navbar}
-				id="mobile-nav"
-				expand="md"
+        id="mobile-nav"
+        expand="md"
       >
         <Navbar.Brand href={BASE_URL}>[[ Company Name ]]</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,6 +52,7 @@ class NavBar extends Component {
                 >{`${company}`}</NavLink>
               );
             })}
+            {myAcc}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -47,7 +63,14 @@ class NavBar extends Component {
 const mapStateToProps = (state) => {
   return {
     data: state.data,
+    user: state.auth.user,
   };
 };
 
-export default connect(mapStateToProps)(NavBar);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    logout: () => dispatch(logout()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
