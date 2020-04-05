@@ -45,9 +45,10 @@ class SignIn extends Component {
 
       if (
         !values.otp.trim() ||
-        !values.firstName.trim() ||
-        !values.lastName.trim() ||
-        !values.email.trim()
+        (this.props.isNewUser &&
+          (!values.firstName.trim() ||
+            !values.lastName.trim() ||
+            !values.email.trim()))
       ) {
         this.setState({
           isError: true,
@@ -57,7 +58,7 @@ class SignIn extends Component {
         return;
       }
 
-      if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)) {
+      if (this.props.isNewUser && !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)) {
         this.setState({
           isError: true,
           errorMsg: "Please enter valid e-mail address.",
@@ -137,9 +138,7 @@ class SignIn extends Component {
 
   render() {
     if (this.props.user !== null) {
-      return (
-        <Redirect to={{ pathname: `${BASE_URL}` }} />
-      );
+      return <Redirect to={{ pathname: `${BASE_URL}` }} />;
     }
 
     let signInBtn = <Button type="submit">Sign In</Button>;
