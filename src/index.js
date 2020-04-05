@@ -7,16 +7,13 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/storeConfig";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
-import Firebase, { FirebaseContext } from "./components/Firebase";
 import "./main.scss";
 
 const app = (
   <Provider store={store}>
     <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
       <ScrollToTop />
-      <FirebaseContext.Provider value={new Firebase()}>
-        <App />
-      </FirebaseContext.Provider>
+      <App />
     </BrowserRouter>
   </Provider>
 );

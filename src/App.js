@@ -1,8 +1,12 @@
-import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import React, { Component, Fragment } from "react";
+import { Route, Switch, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
-import { BASE_URL } from "./serverConfig";
+import firebase from "firebase/app";
+import { Container, Spinner } from "react-bootstrap";
+
+import db, { auth, BASE_URL } from "./serverConfig";
+import { storeUser } from "./store/actions";
+import styles from "./App.module.scss";
 
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
@@ -16,27 +20,68 @@ class App extends Component {
     super(props);
   }
 
+  state = {
+    loading: true,
+  };
+
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        let userDataRef = db.collection("users").doc(user.uid);
+        let getDoc = userDataRef
+          .get()
+          .then((doc) => {
+            if (!doc.exists) {
+              console.log("User not found!");
+              firebase.auth().getInstance().signOut();
+            } else {
+							user.data = {...doc.data()};
+							this.props.storeUser(user);
+            }
+          })
+          .catch((err) => {
+            console.log(err);
+            firebase.auth().signOut();
+          })
+          .finally(() => this.setState({ loading: false }));
+      } else {
+        this.setState({ loading: false });
+        console.log("User not signed in!");
+      }
+    });
+  }
+
   render() {
+    if (this.state.loading) {
+      return (
+        <Container className={styles.container}>
+          <Spinner animation="border" variant="primary"></Spinner>
+          <p className={styles.loadingText}>Loading...</p>
+        </Container>
+      );
+    }
     return (
-      <div>
+      <Fragment>
         <Layout>
           <Switch>
             <Route path={`${BASE_URL}/`} exact component={Home} />
             <Route path={`${BASE_URL}/mobiles/:id`} component={MobilesPage} />
-						<Route path={`${BASE_URL}/auth`} exact component={SignIn} />
+            <Route path={`${BASE_URL}/auth`} exact component={SignIn} />
           </Switch>
         </Layout>
-      </div>
+      </Fragment>
     );
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {};
 };
 
-const mapDispatchToProps = dispatch => {
-  return {};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    storeUser: (user) => dispatch(storeUser(user)),
+  };
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
