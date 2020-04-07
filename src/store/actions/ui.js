@@ -1,4 +1,4 @@
-import { PAGE_START_LOADING, PAGE_STOP_LOADING, AUTH_START_LOADING, AUTH_STOP_LOADING, TOGGLE_TOAST } from './actionTypes';
+import { PAGE_START_LOADING, PAGE_STOP_LOADING, AUTH_START_LOADING, AUTH_STOP_LOADING, TOGGLE_TOAST, CART_START_LOADING, CART_STOP_LOADING } from './actionTypes';
 
 export const pageStartLoading = () => {
     return {
@@ -21,6 +21,18 @@ export const authStartLoading = () => {
 export const authStopLoading = () => {
 	return {
 			type: AUTH_STOP_LOADING
+	}
+}
+
+export const cartStartLoading = () => {
+	return {
+			type: CART_START_LOADING
+	}
+}
+
+export const cartStopLoading = () => {
+	return {
+			type: CART_STOP_LOADING
 	}
 }
 

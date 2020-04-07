@@ -1,5 +1,5 @@
 import db, { auth } from "../../serverConfig";
-import { authStartLoading, authStopLoading } from "./index";
+import { authStartLoading, authStopLoading, storeCart, saveCart } from "./index";
 import { STORE_USER, AUTH_ERROR, NEW_USER_AUTH, STORE_USER_DATA } from "./actionTypes";
 const _ = require("lodash");
 
@@ -76,15 +76,22 @@ export const loginUser = (values, user) => {
 };
 
 export const logout = () => {
-	return dispatch => {
+	console.log("Logging out user");
+	return (dispatch, getState) => {
 		dispatch(authStartLoading());
 		auth.signOut()
-		.then(() => dispatch(storeUser(null)))
+		.then(() => {
+			dispatch(storeUser(null));
+			dispatch(storeCart({}));
+			localStorage.removeItem("ps-cart");
+		})
 		.catch((err) => {
 			console.log(err);
 			dispatch(authError(true, "Some error occurred. Please try again."));
-		}
-		)
+		})
+		.finally(() => {
+			dispatch(authStopLoading());
+		})
 	}
 }
 
@@ -95,12 +102,31 @@ export const storeUser = (user) => {
   };
 };
 
-export const storeUserData = (data) => {
-  return {
+export const storeUserData = (data, userObj) => {
+  return (dispatch, getState) => {
+		const cart = getState().cart.cart || {};
+
+		if (data.cart && data.cart !== "{}") {
+			// TO DO: Check here if UUID exists now
+			data.cart = JSON.parse(data.cart);
+			Object.keys(data.cart).map(uuid => {
+				if (cart[uuid] === undefined && data.cart[uuid]>0)
+					cart[uuid] = data.cart[uuid];
+			})
+			dispatch(storeCart(cart));
+			dispatch(saveCart(cart, userObj));
+			delete data.cart;
+		}
+		dispatch(storeUserDataInStore(data));
+	}
+};
+
+export const storeUserDataInStore = (data) => {
+	return {
     type: STORE_USER_DATA,
     data,
   };
-};
+}
 
 export const authError = (isError, errorMsg) => {
   return {

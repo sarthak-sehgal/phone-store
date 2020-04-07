@@ -5,7 +5,7 @@ import firebase from "firebase/app";
 import { Container, Spinner } from "react-bootstrap";
 
 import db, { auth, BASE_URL } from "./serverConfig";
-import { storeUser, storeUserData } from "./store/actions";
+import { storeUser, storeUserData, getCartFromLocalStorage } from "./store/actions";
 import styles from "./App.module.scss";
 
 import Layout from "./components/Layout/Layout";
@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   state = {
-    loading: true,
+		loading: true
   };
 
   componentDidMount() {
@@ -35,7 +35,7 @@ class App extends Component {
               console.log("User not found!");
               firebase.auth().getInstance().signOut();
             } else {
-							this.props.storeUserData({...doc.data()});
+							this.props.storeUserData({...doc.data()}, user);
 							this.props.storeUser(user);
             }
           })
@@ -43,13 +43,14 @@ class App extends Component {
             console.log(err);
             firebase.auth().signOut();
           })
-          .finally(() => this.setState({ loading: false }));
+					.finally(() => this.setState({ loading: false }));
       } else {
+				console.log("User not signed in!");
+				this.props.getCartFromLocalStorage();
         this.setState({ loading: false });
-        console.log("User not signed in!");
-      }
+			}
     });
-  }
+	}
 
   render() {
     if (this.state.loading) {
@@ -81,7 +82,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
 		storeUser: (user) => dispatch(storeUser(user)),
-		storeUserData: (data) => dispatch(storeUserData(data))
+		storeUserData: (data, user) => dispatch(storeUserData(data, user)),
+		getCartFromLocalStorage: () => dispatch(getCartFromLocalStorage())
   };
 };
 

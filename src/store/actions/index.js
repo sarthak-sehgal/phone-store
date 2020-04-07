@@ -3,7 +3,9 @@ export {
   authStopLoading,
   pageStartLoading,
 	pageStopLoading,
-	toggleToast
+	toggleToast,
+	cartStartLoading,
+	cartStopLoading
 } from "./ui";
 
 export {
@@ -16,5 +18,8 @@ export {
 
 export {
 	addToCart,
-	removeFromCart
+	removeFromCart,
+	storeCart,
+	saveCart,
+	getCartFromLocalStorage
 } from "./cart";

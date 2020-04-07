@@ -33,7 +33,7 @@ class ItemBox extends Component {
 	}
 
   render() {
-    if (!this.props.data || this.props.data == {})
+    if (!this.props.data || JSON.stringify(this.props.data) == "{}")
       return (
         <Fragment>
           <div className={styles.container}>
