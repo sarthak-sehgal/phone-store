@@ -1,6 +1,6 @@
 import db, { auth } from "../../serverConfig";
 import { authStartLoading, authStopLoading } from "./index";
-import { STORE_USER, AUTH_ERROR, NEW_USER_AUTH } from "./actionTypes";
+import { STORE_USER, AUTH_ERROR, NEW_USER_AUTH, STORE_USER_DATA } from "./actionTypes";
 const _ = require("lodash");
 
 export const doesUserExists = (values) => {
@@ -8,11 +8,11 @@ export const doesUserExists = (values) => {
     console.log("Inside doesUserExists");
     dispatch(authStartLoading());
     try {
-      const users = await fetchUsers();
-      const isNewUser =
-        _.find(users, { phoneNum: values.phoneNum }) === undefined;
-      // console.log("All users:", users);
-
+			const users = await fetchUsers();
+			const userObj = _.find(users, { phoneNum: values.phoneNum });
+      const isNewUser = userObj === undefined;
+			if (!isNewUser)
+				dispatch(storeUserData(userObj));
       dispatch(newUserAuth(isNewUser));
     } catch (err) {
       console.log(err);
@@ -60,7 +60,7 @@ export const loginUser = (values, user) => {
           .set(values)
           .then((ref) => {
 						console.log("Added doc with ref " + ref);
-						user.data = {...values};
+						dispatch(storeUserData({...values}));
             dispatch(storeUser(user));
           })
           .catch((err) => {
@@ -92,6 +92,13 @@ export const storeUser = (user) => {
   return {
     type: STORE_USER,
     user,
+  };
+};
+
+export const storeUserData = (data) => {
+  return {
+    type: STORE_USER_DATA,
+    data,
   };
 };
 

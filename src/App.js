@@ -5,7 +5,7 @@ import firebase from "firebase/app";
 import { Container, Spinner } from "react-bootstrap";
 
 import db, { auth, BASE_URL } from "./serverConfig";
-import { storeUser } from "./store/actions";
+import { storeUser, storeUserData } from "./store/actions";
 import styles from "./App.module.scss";
 
 import Layout from "./components/Layout/Layout";
@@ -35,7 +35,7 @@ class App extends Component {
               console.log("User not found!");
               firebase.auth().getInstance().signOut();
             } else {
-							user.data = {...doc.data()};
+							this.props.storeUserData({...doc.data()});
 							this.props.storeUser(user);
             }
           })
@@ -80,7 +80,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    storeUser: (user) => dispatch(storeUser(user)),
+		storeUser: (user) => dispatch(storeUser(user)),
+		storeUserData: (data) => dispatch(storeUserData(data))
   };
 };
 

@@ -3,8 +3,14 @@ export const PAGE_START_LOADING = "PAGE_START_LOADING";
 export const PAGE_STOP_LOADING = "PAGE_STOP_LOADING";
 export const AUTH_START_LOADING = "AUTH_START_LOADING";
 export const AUTH_STOP_LOADING = "AUTH_STOP_LOADING";
+export const CART_START_LOADING = "CART_START_LOADING";
+export const CART_STOP_LOADING = "CART_STOP_LOADING";
 
 // auth
 export const STORE_USER = "STORE_USER";
 export const AUTH_ERROR = "AUTH_ERROR";
 export const NEW_USER_AUTH = "NEW_USER_AUTH";
+export const STORE_USER_DATA = "STORE_USER_DATA";
+
+// cart
+export const STORE_CART = "STORE_CART";
