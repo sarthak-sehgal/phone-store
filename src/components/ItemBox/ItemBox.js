@@ -3,21 +3,33 @@ import { Button } from "react-bootstrap";
 import { connect } from "react-redux";
 import styles from "./ItemBox.module.scss";
 import { BASE_URL } from "../../serverConfig";
-import { addToCart } from "../../store/actions";
+import { addToCart, toggleToast } from "../../store/actions";
 
 class ItemBox extends Component {
   constructor(props) {
     super(props);
 	}
 
+	state = {
+		disabled: false
+	}
+
+	componentDidMount () {
+		if (this.props.cart[this.props.uuid])
+			this.setState({disabled: true});
+	}
+
 	addToCartHandler = (uuid) => {
 		const cart = this.props.cart || {};
+		this.setState({disabled: true});
+
 		if (cart[uuid] !== undefined) {
-			// TO DO: show toast for item exists
+			this.props.showToast("Item already in cart!");
 			return;
 		}
 
 		this.props.addToCart(uuid);
+		this.props.showToast("Item added to cart!");
 	}
 
   render() {
@@ -78,8 +90,8 @@ class ItemBox extends Component {
                 );
               })}
             </ul>
-						<Button variant="success" className={`${styles.cartMobileBtn} mobile-only`} onClick={() => this.addToCartHandler(this.props.uuid)}>
-            	Add to Cart
+						<Button variant="success" className={`${styles.cartMobileBtn} mobile-only`} onClick={() => this.addToCartHandler(this.props.uuid)} disabled={this.state.disabled}>
+            	{!this.state.disabled ? "Add to Cart" : "Item in cart"}
           	</Button>
           </div>
           <div className={styles.priceDiv}>
@@ -102,8 +114,8 @@ class ItemBox extends Component {
               % off!
             </span>
             {cashback}
-            <Button variant="success" className={`${styles.cartDesktopBtn} desktop-only`} onClick={() => this.addToCartHandler(this.props.uuid)}>
-              Add to Cart
+            <Button variant="success" className={`${styles.cartDesktopBtn} desktop-only`} onClick={() => this.addToCartHandler(this.props.uuid)} disabled={this.state.disabled}>
+						{!this.state.disabled ? "Add to Cart" : "Item in cart"}
             </Button>
           </div>
         </div>
@@ -120,7 +132,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addToCart: (uuid) => dispatch(addToCart(uuid, 1)),
+		addToCart: (uuid) => dispatch(addToCart(uuid, 1)),
+		showToast: (message) => dispatch(toggleToast(true, message))
   };
 };
 

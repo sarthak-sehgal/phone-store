@@ -1,9 +1,11 @@
-import { PAGE_START_LOADING, PAGE_STOP_LOADING, AUTH_START_LOADING, AUTH_STOP_LOADING, CART_START_LOADING, CART_STOP_LOADING } from "../actions/actionTypes";
+import { PAGE_START_LOADING, PAGE_STOP_LOADING, AUTH_START_LOADING, AUTH_STOP_LOADING, CART_START_LOADING, CART_STOP_LOADING, TOGGLE_TOAST } from "../actions/actionTypes";
 
 const initialState = {
   pageLoading: false,
 	authLoading: false,
-	cartLoading: false
+	cartLoading: false,
+	toastBody: "",
+	toastShow: 0
 };
 
 const reducer = (state = initialState, action) => {
@@ -38,6 +40,18 @@ const reducer = (state = initialState, action) => {
 				...state,
 				cartLoading: false
 			}
+		case TOGGLE_TOAST:
+			if (action.show)
+				return {
+					...state,
+					toastShow: 1,
+					toastBody: action.body
+				}
+			else
+				return {
+					...state,
+					toastShow: 0
+				}
     default:
       return state;
   }

@@ -1,7 +1,7 @@
 import { STORE_CART } from '../actions/actionTypes';
 
 const initialState = {
-	cart: null
+	cart: {}
 };
 
 const reducer = (state = initialState, action) => {

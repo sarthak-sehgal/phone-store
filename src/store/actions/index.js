@@ -2,7 +2,8 @@ export {
   authStartLoading,
   authStopLoading,
   pageStartLoading,
-  pageStopLoading,
+	pageStopLoading,
+	toggleToast
 } from "./ui";
 
 export {

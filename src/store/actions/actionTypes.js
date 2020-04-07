@@ -5,6 +5,7 @@ export const AUTH_START_LOADING = "AUTH_START_LOADING";
 export const AUTH_STOP_LOADING = "AUTH_STOP_LOADING";
 export const CART_START_LOADING = "CART_START_LOADING";
 export const CART_STOP_LOADING = "CART_STOP_LOADING";
+export const TOGGLE_TOAST = "TOGGLE_TOAST";
 
 // auth
 export const STORE_USER = "STORE_USER";
