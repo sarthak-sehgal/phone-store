@@ -125,10 +125,10 @@ class MobilesPage extends Component {
     if (!this.state.error && this.state.filtered.length > 0) {
       mobileList = (
         <ListGroup>
-          {this.state.filtered.map((name, index) => {
+          {this.state.filtered.map((uuid, index) => {
             return (
-              <ListGroup.Item key={`${name}-${index}`}>
-                <ItemBox data={this.state.mobilesObj[name]}></ItemBox>
+              <ListGroup.Item key={uuid}>
+                <ItemBox data={this.state.mobilesObj[uuid]} uuid={uuid}></ItemBox>
               </ListGroup.Item>
             );
           })}

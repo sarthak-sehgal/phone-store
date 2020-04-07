@@ -1,7 +1,7 @@
 {
   "mobiles": {
     "Samsung": {
-      "S20 Ultra": {
+      "462b6c9b-06e0-483e-a273-541709d97b33": {
         "name": "S20 Ultra",
         "mrp": "92999",
         "price": "92999",
@@ -16,7 +16,7 @@
           "Misc": ""
         }
       },
-      "S20+": {
+      "509ffd6e-cad1-48bc-b019-8f05a5bc39fc": {
         "name": "S20+",
         "mrp": "73999",
         "price": "73999",
@@ -31,7 +31,7 @@
           "Misc": ""
         }
       },
-      "S20": {
+      "5a4c3876-b784-46b7-b99e-f0ce74ffe08b": {
         "name": "S20",
         "mrp": "66999",
         "price": "66999",
@@ -46,7 +46,7 @@
           "Misc": ""
         }
       },
-      "Note10+ 512GB": {
+      "b8da212d-0b4e-4d19-9ff9-216faf8738cb": {
         "name": "Note10+ 512GB",
         "mrp": "89999",
         "price": "89999",
@@ -61,7 +61,7 @@
           "Misc": ""
         }
       },
-      "Note10+ 256GB": {
+      "ea94be62-b6e3-41a8-b368-a8139763f8ee": {
         "name": "Note10+ 256GB",
         "mrp": "79999",
         "price": "79999",
@@ -76,7 +76,7 @@
           "Misc": ""
         }
       },
-      "Note10 256GB": {
+      "bf187e90-df78-4751-b828-3ad6c34f74bf": {
         "name": "Note10 256GB",
         "mrp": "69999",
         "price": "69999",
@@ -91,7 +91,7 @@
           "Misc": ""
         }
       },
-      "Note S10+ 1TB": {
+      "88625566-fb4c-4293-bb87-c30a5f00fb3e": {
         "name": "Note S10+ 1TB",
         "mrp": "93900",
         "price": "93900",
@@ -106,7 +106,7 @@
           "Misc": ""
         }
       },
-      "Note S10+ 512GB": {
+      "59ef8a30-c4ad-44a7-babd-104b95be37cc": {
         "name": "Note S10+ 512GB",
         "mrp": "74900",
         "price": "74900",
@@ -121,7 +121,7 @@
           "Misc": ""
         }
       },
-      "Note S10+ 128GB": {
+      "794ef381-289b-431b-b462-632512800f1d": {
         "name": "Note S10+ 128GB",
         "mrp": "63900",
         "price": "63900",
@@ -136,7 +136,7 @@
           "Misc": ""
         }
       },
-      "S10 512GB": {
+      "5821f320-d039-46b1-b104-a1e06f81f48e": {
         "name": "S10 512GB",
         "mrp": "67900",
         "price": "67900",
@@ -151,7 +151,7 @@
           "Misc": ""
         }
       },
-      "S10 128GB": {
+      "1fc6f85d-24f1-49a6-a09c-6e4923a7dd56": {
         "name": "S10 128GB",
         "mrp": "55900",
         "price": "55900",
@@ -166,7 +166,7 @@
           "Misc": ""
         }
       },
-      "S10e": {
+      "ddd05b10-d2a6-4fed-b9c0-7c3779ad354e": {
         "name": "S10e",
         "mrp": "44900",
         "price": "44900",
@@ -181,7 +181,7 @@
           "Misc": ""
         }
       },
-      "Galaxy S10 Lite 512GB": {
+      "4c8a8ff7-c7ff-458d-8fd7-2ad4428fb0a4": {
         "name": "Galaxy S10 Lite 512GB",
         "mrp": "44999",
         "price": "44999",
@@ -196,7 +196,7 @@
           "Misc": ""
         }
       },
-      "Galaxy S10 Lite 128GB": {
+      "3d86c420-c05d-4e2f-8378-f3ba2fd658d1": {
         "name": "Galaxy S10 Lite 128GB",
         "mrp": "40999",
         "price": "40999",
@@ -211,7 +211,7 @@
           "Misc": ""
         }
       },
-      "Galaxy S10 Lite 128GB (2)": {
+      "b51dd551-18f4-4593-a020-93b2ae6646ce": {
         "name": "Galaxy S10 Lite 128GB (2)",
         "mrp": "39999",
         "price": "39999",
@@ -226,7 +226,7 @@
           "Misc": ""
         }
       },
-      "A805F": {
+      "68393111-9756-41f9-bc7b-aff360813273": {
         "name": "A805F",
         "mrp": "39990",
         "price": "39990",
@@ -241,7 +241,7 @@
           "Misc": ""
         }
       },
-      "Galaxy Note10 Lite 128GB": {
+      "568b930e-f4ae-4c38-aa2e-608dd9a6b1eb": {
         "name": "Galaxy Note10 Lite 128GB",
         "mrp": "38999",
         "price": "38999",
@@ -256,7 +256,7 @@
           "Misc": ""
         }
       },
-      "A71": {
+      "d47e724b-ee17-4fbc-8692-9b1b227e902a": {
         "name": "A71",
         "mrp": "29999",
         "price": "29999",
@@ -271,7 +271,7 @@
           "Misc": ""
         }
       },
-      "A70s (1)": {
+      "48c91ce2-11e1-40cc-a98f-1fde2b2f545c": {
         "name": "A70s (1)",
         "mrp": "28999",
         "price": "28999",
@@ -286,7 +286,7 @@
           "Misc": ""
         }
       },
-      "A70s (2)": {
+      "4648aa6b-11b4-45ed-9b83-73e29900376a": {
         "name": "A70s (2)",
         "mrp": "26999",
         "price": "26999",
@@ -301,7 +301,7 @@
           "Misc": ""
         }
       },
-      "A51": {
+      "4838239d-70df-4bfa-ad47-b2f9ed5dad27": {
         "name": "A51",
         "mrp": "23999",
         "price": "23999",
@@ -316,7 +316,7 @@
           "Misc": ""
         }
       },
-      "A50s": {
+      "e89d9fdd-a184-4c41-b33c-a874a987ea0c": {
         "name": "A50s",
         "mrp": "19999",
         "price": "19999",
@@ -331,7 +331,7 @@
           "Misc": ""
         }
       },
-      "A30s": {
+      "1d2eaed0-74d7-4662-87b4-d0255f2ed485": {
         "name": "A30s",
         "mrp": "15999",
         "price": "15999",
@@ -346,7 +346,7 @@
           "Misc": ""
         }
       },
-      "A20s": {
+      "234499b6-b0bb-4203-aaa2-4d8b81d16fec": {
         "name": "A20s",
         "mrp": "12999",
         "price": "12999",
@@ -361,7 +361,7 @@
           "Misc": ""
         }
       },
-      "A10s": {
+      "1d2fac74-779a-47f1-b2de-92b3d91943b4": {
         "name": "A10s",
         "mrp": "8999",
         "price": "8999",
@@ -376,7 +376,7 @@
           "Misc": ""
         }
       },
-      "J2 Core": {
+      "822e1d04-4802-435c-b662-437ff4238df7": {
         "name": "J2 Core",
         "mrp": "5999",
         "price": "5999",
@@ -391,7 +391,7 @@
           "Misc": ""
         }
       },
-      "Metro (1)": {
+      "7e3e8933-e2f2-4b12-a39b-a8ef22c9ec68": {
         "name": "Metro (1)",
         "mrp": "3225",
         "price": "3225",
@@ -406,7 +406,7 @@
           "Misc": ""
         }
       },
-      "Metro (2)": {
+      "8483b5b9-58ad-437e-aad2-5b9e9565912c": {
         "name": "Metro (2)",
         "mrp": "2800",
         "price": "2800",
@@ -421,7 +421,7 @@
           "Misc": ""
         }
       },
-      "Metro (3)": {
+      "f1e42cab-2f3d-44e5-9cc7-deb166cf07a9": {
         "name": "Metro (3)",
         "mrp": "2025",
         "price": "2025",
@@ -436,7 +436,7 @@
           "Misc": ""
         }
       },
-      "Guru Music 2": {
+      "0cca9aed-150b-4b72-a3c5-756ac8b743a3": {
         "name": "Guru Music 2",
         "mrp": "1625",
         "price": "1625",
@@ -451,7 +451,7 @@
           "Misc": ""
         }
       },
-      "Guru Plus": {
+      "0c763502-c5c0-4e0a-9e79-0e9fa01755e7": {
         "name": "Guru Plus",
         "mrp": "1375",
         "price": "1375",
@@ -466,7 +466,7 @@
           "Misc": ""
         }
       },
-      "Eider": {
+      "910a1420-7275-451e-9560-a35d61b401bc": {
         "name": "Eider",
         "mrp": "1100",
         "price": "1100",
@@ -481,7 +481,7 @@
           "Misc": ""
         }
       },
-      "Tab S6": {
+      "440a67db-d3e0-4f58-b120-4446b5ba62e0": {
         "name": "Tab S6",
         "mrp": "59900",
         "price": "59900",
@@ -496,7 +496,7 @@
           "Misc": "WiFi + LTE"
         }
       },
-      "Tab S5e": {
+      "cb90b7e6-eae4-4dda-a14f-31f6d78cdf94": {
         "name": "Tab S5e",
         "mrp": "39999",
         "price": "39999",
@@ -511,7 +511,7 @@
           "Misc": "WiFi + LTE"
         }
       },
-      "Tab A 10.1in": {
+      "f2f2d035-7308-4639-8ae7-b86f83197e07": {
         "name": "Tab A 10.1in",
         "mrp": "19999",
         "price": "19999",
@@ -526,7 +526,7 @@
           "Misc": "WiFi + LTE"
         }
       },
-      "Tab A 8in": {
+      "82b1b0f2-311e-41fa-8f9d-7c18d5740912": {
         "name": "Tab A 8in",
         "mrp": "11999",
         "price": "11999",
@@ -543,7 +543,7 @@
       }
     },
     "Vivo": {
-      "Vivo V17": {
+      "97fc15e9-c164-40df-897d-75b1b3769f1a": {
         "name": "Vivo V17",
         "mrp": "22990",
         "price": "22990",
@@ -558,7 +558,7 @@
           "Misc": ""
         }
       },
-      "Vivo S1 Pro": {
+      "e944c69b-aa9f-4306-89a0-06b736d2e04f": {
         "name": "Vivo S1 Pro",
         "mrp": "18990",
         "price": "18990",
@@ -573,7 +573,7 @@
           "Misc": ""
         }
       },
-      "Vivo Y19": {
+      "31f3b154-8f4a-45f3-bdaf-539ea8afd303": {
         "name": "Vivo Y19",
         "mrp": "13990",
         "price": "13990",
@@ -588,7 +588,7 @@
           "Misc": "5000mAh Battery, 18W Fast Charging"
         }
       },
-      "Vivo Y15": {
+      "ca5b9e63-c57a-439b-88ae-ee1dfdf142fe": {
         "name": "Vivo Y15",
         "mrp": "11990",
         "price": "11990",
@@ -603,7 +603,7 @@
           "Misc": "5000mAh Battery"
         }
       },
-      "Vivo Y12": {
+      "739e3bac-2834-468f-8f67-ad08c7648a1e": {
         "name": "Vivo Y12",
         "mrp": "9990",
         "price": "9990",
@@ -618,7 +618,7 @@
           "Misc": "MediaTek Helio P22"
         }
       },
-      "Vivo Y91": {
+      "29f2b423-4f83-471b-9b60-9f429d2a1135": {
         "name": "Vivo Y91",
         "mrp": "7990",
         "price": "7990",
@@ -635,7 +635,7 @@
       }
     },
     "Xiaomi": {
-      "Mi A3": {
+      "81c1c7e6-5836-4a89-bf5f-a92600eedb9a": {
         "name": "Mi A3",
         "mrp": "12499",
         "price": "11999",
@@ -650,7 +650,7 @@
           "Misc": ""
         }
       },
-      "Mi A3 (2)": {
+      "2f1d250e-f5eb-4135-a821-fef8beccc161": {
         "name": "Mi A3 (2)",
         "mrp": "15499",
         "price": "14999",
@@ -665,7 +665,7 @@
           "Misc": ""
         }
       },
-      "Poco F1 (1)": {
+      "06dcf783-82e8-488e-9547-647765773a3d": {
         "name": "Poco F1 (1)",
         "mrp": "19499",
         "price": "18999",
@@ -680,7 +680,7 @@
           "Misc": ""
         }
       },
-      "Poco F1 (2)": {
+      "cdfa3ded-d72d-4f0c-9537-05acde7a87de": {
         "name": "Poco F1 (2)",
         "mrp": "18499",
         "price": "17999",
@@ -695,7 +695,7 @@
           "Misc": ""
         }
       },
-      "Poco F1 (3)": {
+      "d3db1b86-3f54-47dd-ba4a-2814bcd513b1": {
         "name": "Poco F1 (3)",
         "mrp": "23499",
         "price": "22999",
@@ -710,7 +710,7 @@
           "Misc": ""
         }
       },
-      "Redmi 7 (1)": {
+      "71b848b2-077f-4754-8735-69a101125cf5": {
         "name": "Redmi 7 (1)",
         "mrp": "7799",
         "price": "7499",
@@ -725,7 +725,7 @@
           "Misc": ""
         }
       },
-      "Redmi 7 (2)": {
+      "ab1ee027-c926-4b56-a546-45744589a9ce": {
         "name": "Redmi 7 (2)",
         "mrp": "8799",
         "price": "8499",
@@ -740,7 +740,7 @@
           "Misc": ""
         }
       },
-      "Redmi 7A (1)": {
+      "23f3840d-f4fe-4e38-8cd6-0b2eaedf4497": {
         "name": "Redmi 7A (1)",
         "mrp": "6299",
         "price": "5999",
@@ -755,7 +755,7 @@
           "Misc": ""
         }
       },
-      "Redmi 7A (2)": {
+      "3cc7021a-e256-4072-9486-9a9db4a21265": {
         "name": "Redmi 7A (2)",
         "mrp": "6499",
         "price": "6199",
@@ -770,7 +770,7 @@
           "Misc": ""
         }
       },
-      "Redmi 8": {
+      "c4695659-2f47-4b8c-904e-198f5708cfae": {
         "name": "Redmi 8",
         "mrp": "8299",
         "price": "7999",
@@ -785,7 +785,7 @@
           "Misc": ""
         }
       },
-      "Redmi 8A (1)": {
+      "807f3b94-3383-4354-a732-d65bbdd61cf6": {
         "name": "Redmi 8A (1)",
         "mrp": "6799",
         "price": "6499",
@@ -800,7 +800,7 @@
           "Misc": ""
         }
       },
-      "Redmi 8A (2)": {
+      "e2710eba-8cac-458f-999e-69b1ef8765a9": {
         "name": "Redmi 8A (2)",
         "mrp": "7299",
         "price": "6999",
@@ -815,7 +815,7 @@
           "Misc": ""
         }
       },
-      "Redmi 8A Dual (1)": {
+      "4fac16e9-d0e9-43df-9a1f-36043fc7f24e": {
         "name": "Redmi 8A Dual (1)",
         "mrp": "6799",
         "price": "6499",
@@ -830,7 +830,7 @@
           "Misc": ""
         }
       },
-      "Redmi 8A Dual (2)": {
+      "33a8f96d-fd0a-4989-a1cf-e28a9a961da5": {
         "name": "Redmi 8A Dual (2)",
         "mrp": "7299",
         "price": "6999",
@@ -845,7 +845,7 @@
           "Misc": ""
         }
       },
-      "Redmi Go": {
+      "f3ec2818-3597-4690-9afd-49ba65f19865": {
         "name": "Redmi Go",
         "mrp": "4699",
         "price": "4499",
@@ -860,7 +860,7 @@
           "Misc": ""
         }
       },
-      "Redmi K20 (1)": {
+      "fe29a43b-7d88-4bd2-b467-921b9329e496": {
         "name": "Redmi K20 (1)",
         "mrp": "234999",
         "price": "22999",
@@ -875,7 +875,7 @@
           "Misc": ""
         }
       },
-      "Redmi K20 (2)": {
+      "a284bd1d-235c-4b68-98f5-5c6c1fe7952a": {
         "name": "Redmi K20 (2)",
         "mrp": "204999",
         "price": "19999",
@@ -890,7 +890,7 @@
           "Misc": ""
         }
       },
-      "Redmi K20 Pro (1)": {
+      "562e5aa5-55bf-4a4d-8276-b70f4449f25a": {
         "name": "Redmi K20 Pro (1)",
         "mrp": "254999",
         "price": "24999",
@@ -905,7 +905,7 @@
           "Misc": ""
         }
       },
-      "Redmi K20 Pro (2)": {
+      "fe03ed3d-8318-4e98-898a-8bf13b91d0d8": {
         "name": "Redmi K20 Pro (2)",
         "mrp": "284999",
         "price": "27999",
@@ -920,7 +920,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 7 Pro (1)": {
+      "c287d79a-3548-4bac-bf3d-5695057bd006": {
         "name": "Redmi Note 7 Pro (1)",
         "mrp": "114999",
         "price": "10999",
@@ -935,7 +935,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 7 Pro (2)": {
+      "bcf480b0-22e7-436c-904c-57016b9caa1a": {
         "name": "Redmi Note 7 Pro (2)",
         "mrp": "14499",
         "price": "13999",
@@ -950,7 +950,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 7 Pro (3)": {
+      "533a14e0-48e0-4eb3-b0be-6514a4f702ee": {
         "name": "Redmi Note 7 Pro (3)",
         "mrp": "13499",
         "price": "12999",
@@ -965,7 +965,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 7S (1)": {
+      "7c62e5a4-2ab1-497e-a95c-75045d7e0886": {
         "name": "Redmi Note 7S (1)",
         "mrp": "10299",
         "price": "9999",
@@ -980,7 +980,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 7S (2)": {
+      "975b0fda-03ec-4e62-aca8-fd7a15c0adb9": {
         "name": "Redmi Note 7S (2)",
         "mrp": "12499",
         "price": "11999",
@@ -995,7 +995,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 8 (1)": {
+      "64783caa-5658-4eef-9672-e63f1faffb9d": {
         "name": "Redmi Note 8 (1)",
         "mrp": "9799",
         "price": "9499",
@@ -1010,7 +1010,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 8 (2)": {
+      "646f5f97-e113-43b4-819d-edf983b31d02": {
         "name": "Redmi Note 8 (2)",
         "mrp": "10999",
         "price": "10499",
@@ -1025,7 +1025,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 8 (3)": {
+      "5c31aaab-1fac-400d-8983-5a82052e100e": {
         "name": "Redmi Note 8 (3)",
         "mrp": "13499",
         "price": "12999",
@@ -1040,7 +1040,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 8 Pro (1)": {
+      "c2bfbcac-ec2e-40c2-9b0a-8f6890bd5482": {
         "name": "Redmi Note 8 Pro (1)",
         "mrp": "16499",
         "price": "15999",
@@ -1055,7 +1055,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 8 Pro (2)": {
+      "e7a1203c-a1e8-4982-8fcb-85adf92550ae": {
         "name": "Redmi Note 8 Pro (2)",
         "mrp": "15499",
         "price": "14999",
@@ -1070,7 +1070,7 @@
           "Misc": ""
         }
       },
-      "Redmi Note 8 Pro (3)": {
+      "b20dbabe-1b28-44b8-8159-a93525ff13d6": {
         "name": "Redmi Note 8 Pro (3)",
         "mrp": "18499",
         "price": "17999",
@@ -1085,7 +1085,7 @@
           "Misc": ""
         }
       },
-      "Redmi Y3 (1)": {
+      "3ca67d8a-6d23-46ae-b0f3-87aa1b36b013": {
         "name": "Redmi Y3 (1)",
         "mrp": "9299",
         "price": "8999",
@@ -1100,7 +1100,7 @@
           "Misc": ""
         }
       },
-      "Redmi Y3 (2)": {
+      "0c8f9c45-58f1-43ed-8a75-5eaded2e0777": {
         "name": "Redmi Y3 (2)",
         "mrp": "12499",
         "price": "11999",
@@ -1117,7 +1117,7 @@
       }
     },
     "Oppo": {
-      "A5S (1)": {
+      "3ea251ef-b227-47e7-bedf-05817d0fe4c5": {
         "name": "A5S (1)",
         "mrp": "8490",
         "price": "8406",
@@ -1132,7 +1132,7 @@
           "Misc": ""
         }
       },
-      "A5S (2)": {
+      "9c65c378-e8a9-46b9-b82b-3bde352d78ea": {
         "name": "A5S (2)",
         "mrp": "8990",
         "price": "8901",
@@ -1147,7 +1147,7 @@
           "Misc": ""
         }
       },
-      "A5S (3)": {
+      "ca380b72-0583-4ef0-9dd7-823ed2aece72": {
         "name": "A5S (3)",
         "mrp": "10990",
         "price": "10881",
@@ -1162,7 +1162,7 @@
           "Misc": ""
         }
       },
-      "A31": {
+      "9124cfe9-7936-4fa7-81e1-9a979903ece7": {
         "name": "A31",
         "mrp": "11490",
         "price": "11376",
@@ -1177,7 +1177,7 @@
           "Misc": ""
         }
       },
-      "A5 2020 (1)": {
+      "b38a3f57-90a7-4caa-abd1-01ad8cbdd959": {
         "name": "A5 2020 (1)",
         "mrp": "11490",
         "price": "11376",
@@ -1192,7 +1192,7 @@
           "Misc": ""
         }
       },
-      "A5 2020 (2)": {
+      "18a5abee-c501-4bba-b972-821f22f3cffb": {
         "name": "A5 2020 (2)",
         "mrp": "12990",
         "price": "12861",
@@ -1207,7 +1207,7 @@
           "Misc": ""
         }
       },
-      "A5 2020 (3)": {
+      "02563bee-c2da-4d1c-bf9a-e6e69aff5299": {
         "name": "A5 2020 (3)",
         "mrp": "14990",
         "price": "14842",
@@ -1222,7 +1222,7 @@
           "Misc": ""
         }
       },
-      "A1K": {
+      "76bd42ee-b351-4816-b0d9-dafa5103267a": {
         "name": "A1K",
         "mrp": "7490",
         "price": "7416",
@@ -1237,7 +1237,7 @@
           "Misc": ""
         }
       },
-      "K1": {
+      "dd78ddae-7378-49c5-b20c-afe3df7bf028": {
         "name": "K1",
         "mrp": "13990",
         "price": "13851",
@@ -1252,7 +1252,7 @@
           "Misc": ""
         }
       },
-      "A9 2020 (1)": {
+      "0c3f68d6-290b-4102-b788-a06c0d4dffe0": {
         "name": "A9 2020 (1)",
         "mrp": "14990",
         "price": "14842",
@@ -1267,7 +1267,7 @@
           "Misc": ""
         }
       },
-      "A9 2020 (2)": {
+      "aeac3f48-8b34-415a-b537-a31c15772136": {
         "name": "A9 2020 (2)",
         "mrp": "17490",
         "price": "17317",
@@ -1282,7 +1282,7 @@
           "Misc": ""
         }
       },
-      "F15": {
+      "41a537eb-0b72-4d3d-9012-f4361687435f": {
         "name": "F15",
         "mrp": "19990",
         "price": "19792",
@@ -1297,7 +1297,7 @@
           "Misc": ""
         }
       },
-      "F11": {
+      "e30a90e8-96f1-4a6d-86f6-df54e4df805e": {
         "name": "F11",
         "mrp": "16990",
         "price": "16822",
@@ -1312,7 +1312,7 @@
           "Misc": ""
         }
       },
-      "F11 PRO": {
+      "fa1f7831-bfb2-41c5-8e58-e6013338d5f5": {
         "name": "F11 PRO",
         "mrp": "19990",
         "price": "19792",
@@ -1327,7 +1327,7 @@
           "Misc": ""
         }
       },
-      "RENO 2F": {
+      "fd2110ed-ae3a-46e8-ad79-8cbc7640d25f": {
         "name": "RENO 2F",
         "mrp": "21990",
         "price": "21772",
@@ -1342,7 +1342,7 @@
           "Misc": ""
         }
       },
-      "RENO 2Z": {
+      "2444f143-7c6a-410e-a8f5-5dabde7a92c4": {
         "name": "RENO 2Z",
         "mrp": "25990",
         "price": "25733",
@@ -1357,7 +1357,7 @@
           "Misc": ""
         }
       },
-      "RENO 2": {
+      "554c4d42-ebca-49ef-821e-e0f1cc74ca1e": {
         "name": "RENO 2",
         "mrp": "36990",
         "price": "36624",
@@ -1372,7 +1372,7 @@
           "Misc": ""
         }
       },
-      "RENO": {
+      "ba0e69d1-3a83-472a-b20c-22c5e0554681": {
         "name": "RENO",
         "mrp": "32990",
         "price": "32663",
@@ -1387,7 +1387,7 @@
           "Misc": ""
         }
       },
-      "RENO PRO": {
+      "7dc12c51-3d7a-4e40-aad6-cec85b02b97d": {
         "name": "RENO PRO",
         "mrp": "49990",
         "price": "49495",
@@ -1402,7 +1402,7 @@
           "Misc": ""
         }
       },
-      "RENO 3 PRO": {
+      "c2cc357e-19dc-479a-8cca-0694328e481f": {
         "name": "RENO 3 PRO",
         "mrp": "29990",
         "price": "29693",

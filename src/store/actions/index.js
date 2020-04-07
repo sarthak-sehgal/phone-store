@@ -11,4 +11,9 @@ export {
 	storeUser,
 	logout,
 	storeUserData
-} from "./auth"
+} from "./auth";
+
+export {
+	addToCart,
+	removeFromCart
+} from "./cart";

@@ -1,11 +1,25 @@
 import React, { Component, Fragment } from "react";
+import { Button } from "react-bootstrap";
+import { connect } from "react-redux";
 import styles from "./ItemBox.module.scss";
 import { BASE_URL } from "../../serverConfig";
+import { addToCart } from "../../store/actions";
 
 class ItemBox extends Component {
   constructor(props) {
     super(props);
-  }
+	}
+
+	addToCartHandler = (uuid) => {
+		const cart = this.props.cart || {};
+		if (cart[uuid] !== undefined) {
+			// TO DO: show toast for item exists
+			return;
+		}
+
+		this.props.addToCart(uuid);
+	}
+
   render() {
     if (!this.props.data || this.props.data == {})
       return (
@@ -31,7 +45,7 @@ class ItemBox extends Component {
             className={styles.image}
             style={{
               backgroundImage:
-                "url('https://www.91-img.com/pictures/126032-v9-samsung-galaxy-s10-mobile-phone-large-1.jpg')"
+                "url('https://www.91-img.com/pictures/126032-v9-samsung-galaxy-s10-mobile-phone-large-1.jpg')",
             }}
           />
           <div className={styles.content}>
@@ -39,7 +53,7 @@ class ItemBox extends Component {
               {this.props.data.name}
             </span>
             <ul className={styles.description}>
-              {Object.keys(this.props.data.description).map(key => {
+              {Object.keys(this.props.data.description).map((key) => {
                 if (!this.props.data.description[key]) return null;
                 if (key == "url") {
                   return (
@@ -64,6 +78,9 @@ class ItemBox extends Component {
                 );
               })}
             </ul>
+						<Button variant="success" className={`${styles.cartMobileBtn} mobile-only`} onClick={() => this.addToCartHandler(this.props.uuid)}>
+            	Add to Cart
+          	</Button>
           </div>
           <div className={styles.priceDiv}>
             <span className={`${styles.name} mobile-only`}>
@@ -85,6 +102,9 @@ class ItemBox extends Component {
               % off!
             </span>
             {cashback}
+            <Button variant="success" className={`${styles.cartDesktopBtn} desktop-only`} onClick={() => this.addToCartHandler(this.props.uuid)}>
+              Add to Cart
+            </Button>
           </div>
         </div>
       </Fragment>
@@ -92,4 +112,16 @@ class ItemBox extends Component {
   }
 }
 
-export default ItemBox;
+const mapStateToProps = (state) => {
+  return {
+		cart: state.cart.cart
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addToCart: (uuid) => dispatch(addToCart(uuid, 1)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ItemBox);

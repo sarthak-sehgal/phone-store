@@ -30,7 +30,13 @@
   }
 
   .description {
-    list-style-position: inside;
+		list-style-position: inside;
+
+		@media (max-width: 600px) {
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 0;
+		}
   }
 
   .part {
@@ -44,7 +50,11 @@
 
   .descItem {
     padding-bottom: 2px;
-  }
+	}
+
+	.cartMobileBtn {
+		margin-top: 20px;
+	}
 }
 
 .priceDiv {
@@ -74,17 +84,19 @@
     font-weight: bold;
     color: #388e3c;
 	}
-	
+
 	.cashback {
 		color: #388e3c;
 	}
-}
 
-.mobile-only {
-	display: none;
-}
-.desktop-only {
-	display: block;
+	.cartDesktopBtn {
+		max-width: 150px;
+		margin-top: 20px;
+
+		@media (max-width: 600px) {
+			display: none;
+		}
+	}
 }
 
 @media (max-width: 600px) {
