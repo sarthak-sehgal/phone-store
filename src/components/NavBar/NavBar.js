@@ -52,6 +52,9 @@ class NavBar extends Component {
                 >{`${company}`}</NavLink>
               );
             })}
+						<NavLink to={`${BASE_URL}/cart`} className={styles.navLink}>
+              Cart
+            </NavLink>
             {myAcc}
           </Nav>
         </Navbar.Collapse>

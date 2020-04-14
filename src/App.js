@@ -12,6 +12,7 @@ import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
 import MobilesPage from "./components/MobilesPage/MobilesPage";
 import SignIn from "./components/Auth/SignIn/SignIn";
+import Cart from "./components/Cart/Cart";
 
 // import {} from "./store/actions/index";
 
@@ -68,6 +69,7 @@ class App extends Component {
             <Route path={`${BASE_URL}/`} exact component={Home} />
             <Route path={`${BASE_URL}/mobiles/:id`} component={MobilesPage} />
             <Route path={`${BASE_URL}/auth`} exact component={SignIn} />
+						<Route path={`${BASE_URL}/cart`} exact component={Cart} />
           </Switch>
         </Layout>
       </Fragment>

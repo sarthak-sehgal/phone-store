@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+	margin-bottom: 20px;
+	padding: 20px 0;
+	border-radius: 3px;
+	text-align: left;
+	min-height: 200px;
+	box-shadow: 0px 0px 5px 0px #e0dbdb;
+}
+
+.image {
+  display: flex;
+  width: 150px;
+  margin-right: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding-right: 20px;
+}
+
+.itemName {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.priceDiv {
+	display: flex;
+
+  .price {
+    font-size: 1rem;
+		font-weight: bold;
+
+    &::before {
+      content: "\20B9";
+    }
+  }
+
+  .mrp {
+    text-decoration: line-through;
+		margin-right: 10px;
+
+    &::before {
+      content: "\20B9";
+    }
+	}
+}
+
+.discount {
+	font-weight: bold;
+	color: #388e3c;
+	margin-bottom: 5px;
+}
+
+.cashback {
+	color: #388e3c;
+}
+
+.qtyForm {
+	margin-top: 10px;
+	max-width: 100px;
+}
+
+@media (max-width: 600px) {
+	.image {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+		flex: none;
+		margin-bottom: 10px;
+	}
+	.priceDiv {
+		.price {
+			font-size: 1.2rem;
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+
+		.mrp {
+			font-size: 1rem;
+			margin-bottom: 0;
+		}
+	}
+}
