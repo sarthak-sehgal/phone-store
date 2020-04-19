@@ -27,7 +27,7 @@ class Cart extends Component {
 			<div className={styles.container}>
 				<div className={styles.main}>
 					{Object.keys(this.props.cart).map(prodCode => (
-						<CartItem data={this.getProduct(prodCode)} quantity={this.props.cart[prodCode]}></CartItem>
+						<CartItem data={this.getProduct(prodCode)} quantity={this.props.cart[prodCode]} key={prodCode} prodCode={prodCode}></CartItem>
 					))}
 				</div>
 				<div className={styles.sidebar}>

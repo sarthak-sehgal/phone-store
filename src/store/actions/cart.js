@@ -6,7 +6,7 @@ export const addToCart = (uuid, quantity) => {
   return (dispatch, getState) => {
     // TO DO: Add check here for whether UUID exists
 		console.log("inside addToCart", uuid, quantity);
-		if (!Number.isInteger(quantity) || quantity<=0)
+		if (!Number.isInteger(quantity) || quantity<=0 || !uuid)
 			return;
 
 		const cart = getState().cart.cart || {};
@@ -21,7 +21,8 @@ export const removeFromCart = (uuid) => {
 	return (dispatch, getState) => {
 		// TO DO: Add check here for whether UUID exists
 
-		const cart = getState().cart.cart || {};
+		console.log("Deleting item with uuid", uuid);
+		let cart = getState().cart.cart || {};
 		delete cart[uuid];
 		dispatch(storeCart(cart));
 		dispatch(saveCart(cart));
@@ -33,7 +34,7 @@ export const saveCart = (cart, userObj) => {
 	return (dispatch, getState) => {
 		dispatch(cartStartLoading());
 		let user = getState().auth.user || userObj;
-		if (!cart || JSON.stringify(cart) === "{}")
+		if (!cart)
 			return;
 
 		console.log("Storing cart in local storage");

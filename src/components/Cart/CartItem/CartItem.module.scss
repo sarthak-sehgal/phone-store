@@ -8,11 +8,13 @@
 	text-align: left;
 	min-height: 200px;
 	box-shadow: 0px 0px 5px 0px #e0dbdb;
+	position: relative;
 }
 
 .image {
   display: flex;
-  width: 150px;
+	width: 150px;
+	min-height: 100px;
   margin-right: 20px;
   background-size: contain;
   background-position: center;
@@ -68,24 +70,78 @@
 	max-width: 100px;
 }
 
+.deleteItem {
+	box-shadow: none;
+	background: none;
+	border: none;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #dc3545;
+}
+
 @media (max-width: 600px) {
 	.image {
     height: 100px;
     width: 100px;
-    margin-right: 10px;
 		flex: none;
 		margin-bottom: 10px;
+		margin-right: 0;
 	}
+
+	.content {
+		padding: 0 10px;
+	}
+
+	.itemName {
+		font-size: 1.2rem;
+	}
+
 	.priceDiv {
+		flex-direction: column;
+		margin-bottom: 0;
 		.price {
-			font-size: 1.2rem;
+			font-size: 1rem;
 			font-weight: 500;
-			margin-bottom: 0;
+			margin: 0;
 		}
 
 		.mrp {
 			font-size: 1rem;
-			margin-bottom: 0;
+			margin: 0;
 		}
+	}
+
+	.discount, .cashback {
+		font-size: 0.8rem;
+		margin-bottom: 0;
+	}
+
+	.qtyForm {
+		padding: 0;
+		select {
+			font-size: 0.8rem;
+			padding: 0;
+			padding-left: 5px;
+		}
+	}
+
+	.deleteItem {
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		height: auto;
+		right: auto;
+		background-color: #6c757d;
+		color: #fff;
+		padding: 5px 0;
+		border-radius: 0 0 3px 3px;
+	}
+
+	.qtySpan {
+		font-size: 0.8rem;
 	}
 }
