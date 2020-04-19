@@ -23,6 +23,36 @@
 	border-radius: 3px;
 	min-width: 250px;
 	padding: 20px 10px;
+	flex-direction: column;
+}
+
+.totalPrice, .totalMrp {
+	&::before {
+		content: '\20B9'
+	}
+}
+
+.totalPrice {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.totalMrp {
+	font-size: 1.2rem;
+	text-decoration: line-through;
+}
+
+.totalSavings {
+	font-weight: bold;
+	color: #388e3c;
+}
+
+.buyBtn {
+	margin: 20px 0 10px 0;
+}
+
+.buyBtnMobile {
+	display: none !important;
 }
 
 @media (max-width: 900px) {
@@ -37,11 +67,30 @@
 @media (max-width: 600px) {
 	.container {
 		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		min-height: 100vh;
 	}
 	.main {
 		width: 100%;
+		margin: 0;
 	}
 	.sidebar {
 		display: none;
+	}
+
+	.buyBtnMobile {
+		display: block !important;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		z-index: 999;
+
+		span {
+			padding: 10px 0;
+			font-weight: 500;
+			font-size: 1.5rem;
+		}
 	}
 }
